@@ -1,0 +1,23 @@
+$colors: (
+  'primary': #ffffff,
+  'secondary': #ffa5ba,
+  'accent': #d41443,
+  'primary--hover': #ecebeb,
+  'accent--hover': #c7133e,
+  'paragraph': #000000,
+  'text': #907e82,
+  'bg-page': #fff5f6,
+  'bg-burger': #e17992,
+  'bg-accent': #ffb8ca,
+  'bg-prime': #f0d1a5,
+  'bg-second': #c2e297,
+  'bg-slide': #fafafa,
+  'border': #e1e1e1,
+  'border-burger': #e18298,
+  'slide-home': #d31342,
+  'slide-marker': #d9d9d9,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
