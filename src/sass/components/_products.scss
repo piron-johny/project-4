@@ -1,0 +1,101 @@
+.products__subtitle{
+    text-transform: uppercase;
+   color: getColor('secondary');
+   text-align: center;
+   margin-bottom: 15px;
+   @include text (Titan One, 18px, 400, 1.166, null); 
+}
+.products__title{
+    margin-bottom: 144px;
+    text-transform: uppercase;
+    color: getColor('accent');
+    text-align: center;
+    @include text (Titan One, 34px, 400, 1.147, 0.04em);
+}
+.products__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.products__item{
+    display: flex;
+    margin-bottom: 130px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0, 41px;
+    width: 280px;
+    height: 485px;
+    border-radius: 24px;
+}
+
+.products__item.icecream{
+    background-color: getColor('bg-accent');
+    &::before {
+    content: url(../images/products_1-mobile.png);
+    position: relative;
+    display: block;
+    top: -113px;
+    width: 249px;
+    height: 252px;
+}
+}
+.products__item.coffee{
+    background-color: getColor('bg-prime');
+    &::before {
+    content: url(../images/products_2-mobile.png);
+    position: relative;
+    display: block;
+    top: -113px;
+    width: 249px;
+    height: 252px;
+}
+}
+.products__item.milkshakes{
+    background-color: getColor('bg-second');
+    &::before {
+    content: url(../images/products_3-mobile.png);
+    position: relative;
+    top: -113px;
+    display: block;
+    width: 249px;
+    height: 252px;
+}
+}
+
+.products__name{
+    position: relative;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: getColor('primary');
+    @include text (Titan One, 20px, 400, 1.15, 0.04em);
+}
+.products__name::after{
+    content: ". . .";
+    position: relative;
+    top: 30px;
+    width: 26px;
+    color: getColor('primary');
+    @include text (Titan One, 20px, 400, 1.15, 0.04em);
+
+}
+.products__text{
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: getColor('primary');
+   @include text (DM Sans, 14px, 700, 1.52, 0.04em);
+}
+.products__btn{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    background-image: url(../images/products_arrow.png);
+}
