@@ -1,0 +1,113 @@
+.products__subtitle{
+    text-transform: uppercase;
+   color: getColor('secondary');
+   text-align: center;
+   margin-bottom: 15px;
+   @include text (Titan One, 18px, 400, 1.166, null); 
+}
+.products__title{
+    margin-bottom: 144px;
+    text-transform: uppercase;
+    color: getColor('accent');
+    text-align: center;
+    @include text (Titan One, 34px, 400, 1.147, 0.04em);
+}
+.products__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.products__item{
+    display: flex;
+    margin-bottom: 130px;
+    padding-bottom: 41px;
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 280px;
+    height: 485px;
+    border-radius: 24px;
+}
+
+.products__item.icecream{
+    position: relative;
+    background-color: getColor('bg-accent');
+    
+    &::before {
+    content: url(../images/products_1-mobile.png);
+    position: absolute;
+    margin: 0;
+    top: -113px;
+    width: 249px;
+    height: 252px;
+}
+}
+.products__item.coffee{
+    position: relative;
+    background-color: getColor('bg-prime');
+    
+    &::before {
+    content: url(../images/products_2-mobile.png);
+    position: absolute;
+    top: -113px;
+    width: 249px;
+    height: 252px;
+}
+}
+.products__item.milkshakes{
+    position: relative;
+    background-color: getColor('bg-second');
+   
+    &::before {
+    content: url(../images/products_3-mobile.png);
+    position: absolute;
+    top: -113px;
+    width: 249px;
+    height: 252px;
+ }
+}
+.products__name{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 161px;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: getColor('primary');
+    @include text (Titan One, 20px, 400, 1.15, 0.04em);
+
+    &::after{
+    content: ". . .";
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 205px;
+    transform: translate(-50%, -50%);
+    color: getColor('primary');
+    @include text (Titan One, 20px, 400, 1.15, 0.04em);
+ }
+}
+.products__text{
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    color: getColor('primary');
+   @include text (DM Sans, 14px, 700, 1.52, 0.04em);
+}
+.products__btn{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+   
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    background-image: url(../images/products_arrow.png);
+}
