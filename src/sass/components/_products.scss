@@ -69,10 +69,12 @@
  }
 }
 .products__name{
+    display: inline-block;
+    width: 100%;
     position: relative;
     margin: 0, auto;
     padding: 0;
-        padding-top: 161px;
+    padding-top: 161px;
     margin-bottom: 60px;
     text-align: center;
     text-transform: uppercase;
@@ -81,11 +83,11 @@
 
     &::after{
     content: ". . .";
-    position: relative;
-    top: 33px;
-    left: -74px;
-    width: 26px;
-    height: 6px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 205px;
+    transform: translate(-50%, -50%);
     color: getColor('primary');
     @include text (Titan One, 20px, 400, 1.15, 0.04em);
  }
