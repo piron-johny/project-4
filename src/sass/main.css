@@ -33,4 +33,49 @@ img {
   width: 100%;
   height: auto;
 }
+
+@media screen and (min-width: 320px) {
+  .conteiner {
+    width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
+}
+
+.button {
+  min-width: 150px;
+  height: 44px;
+  border-radius: 22px;
+  border-color: transparent;
+  padding-left: 37px;
+  padding-right: 37px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.page-header {
+  position: fixed;
+  background-color: transparent;
+}
 /*# sourceMappingURL=main.css.map */
