@@ -1,10 +1,13 @@
 
-$('selector').masonry();
-jQuery(document).ready(function($) {
-    $('.elements-gride').masonry({
-        // options
-        itemSelector: '.element-item',
-        columnWidth: 300
-    });
+var $container = $('#container');
+// Инициализация
+$container.masonry({
+  columnWidth: 0,
+    itemSelector: '.item'
 });
+var msnry = $container.data('masonry');
 
+// Инициализация Масонри, после загрузки изображений
+$container.imagesLoaded( function() {
+  $container.masonry();
+});

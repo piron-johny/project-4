@@ -4,24 +4,87 @@
  * Все паршалы подключаются сюда.
  */
 .section-gallery {
-  padding: 15px;
+  padding: 12px;
 }
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 12px;
+  padding-left: 12px;
   border: 1px solid #ccc;
   margin: 0 auto;
   padding: 50px 0;
-  max-width: 1170px;
+  max-width: 1050px;
 }
 
 /* Элемент сетки */
 .element-item {
   border: 2px solid rgba(0, 0, 0, 0.35);
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   padding: 1px;
-  width: 280px;
+  width: 250px;
+}
+
+.item {
+  width: 12%;
+}
+
+.item.w2 {
+  width: 30%;
+}
+
+.item.hidden {
+  display: inline-block;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  left: 0;
+  top: 0;
+  outline: tomato;
+}
+
+.item.hidden.first {
+  width: 12%;
+  height: 150px;
+}
+
+.item.hidden.second {
+  width: 12%;
+  height: 50px;
+}
+
+.item.hidden.third {
+  width: 12%;
+  height: 55px;
+}
+
+.item.hidden.forth {
+  width: 12%;
+  height: 35px;
+}
+
+.item.hidden.seventh {
+  width: 13%;
+  height: 35px;
+}
+
+.item.hidden.fifth {
+  width: 12%;
+  height: 35px;
+}
+
+.item.hidden.eighth {
+  width: 13%;
+  height: 35px;
+}
+
+.item.hidden.ninth {
+  width: 12%;
+  height: 55px;
+}
+
+.item.hidden.eleven {
+  width: 13%;
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */
