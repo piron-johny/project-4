@@ -1,0 +1,51 @@
+.advantages {
+  background-color: getColor('bg-page');
+}
+
+.advantages__number {
+  @include text(Titan One, 36px, normal, 1.139, 0.04em);
+  color: getColor('accent');
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.advantages__text {
+  @include text(DM Sans, 12px, bold, 1.667, 0.02em);
+}
+
+.advantages__item {
+  display: block;
+  width: 230px;
+  &--first {
+    &::before {
+      content: url(../images/advantages_icon_1.png);
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  &--second {
+    &::before {
+      content: url(../images/advantages_icon_2.png);
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  &--third {
+    &::before {
+      content: url(../images/advantages_icon_3.png);
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+
+.advantages__subtitle {
+  visibility: hidden;
+}
