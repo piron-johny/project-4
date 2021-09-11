@@ -6,6 +6,7 @@
         "base/_null.scss",
         "utils/_colors.scss",
         "utils/_mixin.scss",
+        "components/_header.scss",
         "components/_contacts.scss",
         "components/_hero.scss",
         "components/_products.scss"
