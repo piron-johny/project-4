@@ -1,0 +1,28 @@
+.socials {
+  @include flex(null, null, flex-end, null);
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    @include flex(null, null, center, center);
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    background-color: getColor('socials-icon');
+
+    @include transition(background-color, null);
+
+    &:hover,
+    &:focus {
+      background-color: getColor('accent');
+    }
+  }
+
+  &__icon {
+    fill: getColor('primary');
+  }
+}
