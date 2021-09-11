@@ -12,6 +12,7 @@
 }
 .contacts {
   @include flex(column, null, center, center);
+  position: relative;
   background-color: getColor('bg-page');
   width: 100%;
   height: 100%;
@@ -28,6 +29,10 @@
       @include flex(row, null, null, null);
     }
   }
+  // &::before {
+  //   background-image: url(../../../../sectionbg2\ 1.jpg);
+  //   scale: fill;
+  // }
 }
 .contacts-list {
   display: flex;
@@ -39,6 +44,9 @@
   box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
   @media screen and(max-width:1279px) {
     width: 220px;
+  }
+  @media screen and(min-width:1280px) {
+    width: 330px;
   }
   @media screen and(min-width:768px) {
     &:not(:last-child) {
@@ -67,9 +75,9 @@
 }
 .contacts-category {
   @include flex(null, null, center, center);
-  @include text(null, null, null, 1.86, 0.04em);
+  @include text(null, 12px, null, 1.86, 0.04em);
   width: 80px;
-  height: 16px;
+  // height: 16px;
   margin-bottom: 25px;
   text-transform: uppercase;
   color: #fff;
@@ -89,10 +97,13 @@
 
 }
 .contacts-title {
-  @include text(null, 12px, 500, 1.86, 0.04em);
+  @include text(null, 12px, bold, 1.86, 0.04em);
   margin-bottom: 10px;
   @media screen and(min-width:480px) {
     @include text(null, 14px, null, null, null);
+  }
+  @media screen and(min-width:1280px) {
+    @include text(null, 16px, null, null, null);
   }
 }
 .contacts-description {
@@ -101,6 +112,9 @@
   @media screen and(min-width:480px) {
     @include text(null, 14px, null, 1.66, null);
   }
+  @media screen and(min-width:1280px) {
+    @include text(null, 16px, null, 1.83, 0.04em);
+  }
 }
 .contacts-worktime {
   &__schedule {
@@ -108,9 +122,12 @@
       margin-bottom: 10px;
     }
     .contacts-workdays {
-      @include text(null, 12px, 500, 1.86, 0.04em);
+      @include text(null, 12px, bold, 1.86, 0.04em);
       @media screen and(min-width:480px) {
         @include text(null, 14px, null, null, null);
+      }
+      @media screen and(min-width:480px) {
+        @include text(null, 16px, null, null, 0.04em);
       }
     }
     .contacts-time {
@@ -118,6 +135,9 @@
       line-height: 1.86;
       @media screen and(min-width:480px) {
         @include text(null, 14px, null, null, null);
+      }
+      @media screen and(min-width:480px) {
+        @include text(null, 16px, null, null, null);
       }
     }
   }
@@ -131,6 +151,11 @@
   @media screen and(min-width:480px) {
     @include text(null, 14px, null, 1.83, null);
   }
+  @media screen and(min-width:480px) {
+    @include text(null, 16px, null, null, null);
+  }
+  &:hover,
+  &:focus {
+    color: #d41342;
+  }
 }
-// .contacts-mail {
-// }
