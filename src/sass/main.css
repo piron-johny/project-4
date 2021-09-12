@@ -412,6 +412,325 @@ img {
   background-image: url(../images/products_arrow.png);
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.made {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 125px;
+  background: #fff5f6;
+}
+
+@media (min-width: 768px) {
+  .made {
+    padding-top: 85px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .made {
+    padding-top: 125px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .made {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(../images/bg_milk-desktop.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+.made__tradition {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .made__tradition {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 1280px) {
+  .made__tradition {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.made__text {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .made__text {
+    width: 429px;
+    font-size: 48px;
+    line-height: 1.14;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .made__text {
+    width: 534px;
+    font-size: 58px;
+    line-height: 1.13;
+    margin-bottom: 55px;
+  }
+}
+
+.made__img {
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 280px;
+  height: 279px;
+}
+
+@media (min-width: 768px) {
+  .made__img {
+    width: 340px;
+    height: 339px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .made__img {
+    width: 516px;
+    height: 516px;
+  }
+}
+
+.made__box {
+  position: relative;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .made__box {
+    margin-left: 17px;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .made__box {
+    margin-left: 74px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+  }
+}
+
+.made__title {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #000000;
+  margin-bottom: 47px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .made__title {
+    font-size: 14px;
+    line-height: 176%;
+    margin-bottom: 47px;
+    padding-left: 0px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .made__title {
+    font-size: 16px;
+    line-height: 176%;
+    margin-bottom: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.made__list {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .made__list {
+    font-size: 14px;
+    line-height: 176%;
+    padding-left: 0px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .made__list {
+    font-size: 14px;
+    line-height: 194%;
+    padding-left: 0px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .made__love {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.made__cow {
+  margin-bottom: 46px;
+}
+
+@media (min-width: 768px) {
+  .made__cow {
+    margin-bottom: 0px;
+  }
+}
+
+.made__bg {
+  position: absolute;
+  width: 320px;
+  height: 133px;
+  bottom: 0px;
+  left: -20px;
+}
+
+@media (min-width: 320px) {
+  .made__bg {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .made__bg {
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1282px;
+    height: 534px;
+  }
+}
+
+.made__accumsan {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 17px;
+}
+
+@media (min-width: 768px) {
+  .made__accumsan {
+    font-size: 14px;
+    line-height: 176%;
+    padding-left: 0px;
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .made__accumsan {
+    font-size: 14px;
+    line-height: 194%;
+    padding-left: 0px;
+    margin-bottom: 45px;
+  }
+}
+
+.made__button {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.3125;
+  color: #d41443;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  margin-left: 30px;
+  width: 176px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.made__button:hover {
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .made__button {
+    margin-left: 0px;
+  }
+}
+
+.made__more {
+  margin-right: 14px;
+}
+
+.made__vector {
+  display: block;
+  width: 5px;
+  height: 17px;
+  color: #d41443;
+}
+
 .advantages {
   background-color: #fff5f6;
 }
