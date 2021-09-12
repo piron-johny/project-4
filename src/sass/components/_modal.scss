@@ -239,7 +239,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2px;
 }
 
-.form__checkbox:checked ~ .start-form__icon-check {
+.form__checkbox:checked ~ .form__icon-check {
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
