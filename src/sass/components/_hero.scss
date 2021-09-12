@@ -243,6 +243,16 @@
   }
 }
 
+.hero-milk__link {
+  width: 18px;
+  height: 18px;
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
 .right-side {
   @media screen and (max-width: 767px) {
     display: none;
