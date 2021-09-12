@@ -51,6 +51,28 @@
 .slider__name {
   @include text(DM Sans, 14px, 500, 1.86, null);
   color: getColor('paragraph');
+  padding-bottom: 30px;
+}
+
+.slick-dots {
+  @include flex(null, wrap, center, null);
+  & button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background-color: getColor('lide-marker');
+    border-radius: 50%;
+    border: none;
+  }
+  & li:not(:last-child) {
+    margin-right: 18px;
+  }
+  & li.slick-active {
+    background: url('../images/customer-home-ico.svg') center 10px no-repeat;
+    & button {
+      background-color: transparent;
+    }
+  }
 }
 
 
