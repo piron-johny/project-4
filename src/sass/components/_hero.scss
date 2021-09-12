@@ -8,19 +8,27 @@
   margin-right: auto;
 
   background-color: #ffb8ca;
+  background-image: url(../../../images/hero_circle_bg.svg);
+  background-repeat: no-repeat;
+  background-size: 346px 344px;
+  background-position: bottom 75px left 36px;
 
   @media screen and (min-width: 768px) {
     height: 399px;
+    background-size: 324px 322px;
+    background-position: bottom 46px left 307px;
   }
 
   @media screen and (min-width: 1280px) {
     height: 655px;
+    background-size: 538px 538px;
+    background-position: bottom 75px left 475px;
   }
 }
 
 .container-hero {
   position: relative;
-  min-width: 320px;
+  width: 320px;
   width: 100%;
   height: 100%;
   padding-left: 20px;
@@ -28,30 +36,17 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-image: url(../images/hero_circle_bg.svg);
-  background-repeat: no-repeat;
-  background-size: 346px 344px;
-  background-position: bottom 75px left 36px;
-
-  @media screen and (min-width: 418px) {
-    width: 418px;
-  }
-
   @media screen and (min-width: 768px) {
-    min-width: 768px;
+    width: 768px;
     width: 100%;
     padding-left: 34px;
     padding-right: 34px;
-    background-size: 324px 322px;
-    background-position: bottom 46px left 307px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
     padding-left: 115px;
     padding-right: 115px;
-    background-size: 538px 538px;
-    background-position: bottom 75px left 475px;
   }
 }
 
@@ -60,7 +55,6 @@
   bottom: 0;
   left: 117px;
   width: 171px;
-  z-index: 1;
 
   @media screen and (min-width: 768px) {
     left: 378px;
@@ -78,7 +72,7 @@
   bottom: 160px;
   left: 20px;
   width: 225px;
-  z-index: 2;
+  z-index: 1;
 
   @media screen and (min-width: 768px) {
     bottom: 173px;
