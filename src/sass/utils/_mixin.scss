@@ -1,0 +1,21 @@
+@mixin flex($fd, $fw, $jc, $ai) {
+  display: flex;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin text($ff, $fs, $fw, $lh, $ls) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin transition($one, $two) {
+  transition-property: $one, $two;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

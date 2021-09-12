@@ -1,0 +1,62 @@
+.section {
+  padding-top: 110px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 120px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+  }
+
+  &--products {
+    padding-bottom: 110px;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 120px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 130px;
+    }
+  }
+
+  &--advantages {
+    padding-top: 50px;
+    background-color: getColor('bg-page');
+
+    @media screen and (min-width: 768px) {
+      padding-top: 70px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 90px;
+    }
+  }
+
+  &__lable-title {
+    @include text(Titan One, 18px, 400, 1.17, null);
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: getColor('secondary');
+
+    &--visually-hidden {
+      @extend %visually-hidden;
+    }
+  }
+
+  &__title {
+    @include text(Titan One, 34px, 400, 1.15, 00.04em);
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: getColor('accent');
+
+    &--visually-hidden {
+      @extend %visually-hidden;
+    }
+  }
+}
