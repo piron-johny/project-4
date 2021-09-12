@@ -1,3 +1,4 @@
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -11,15 +12,13 @@
   overflow: hidden;
 }
 
-
 .contacts {
   @include flex(column, null, center, center);
   background-color: getColor('bg-page');
   width: 100%;
   height: 100%;
-  padding-bottom: 54px;
   @media screen and (max-width: 767px) {
-    background-image: linear-gradient(#fff 84px, #FFF5F6 84px);
+    background-image: linear-gradient(#fff 84px, #fff5f6 84px);
   }
 }
 .contacts-list {
@@ -49,9 +48,8 @@
 }
 .contacts-category {
   @include flex(null, null, center, center);
-  @include text(null, null, null, 1.86, 0.04em);
+  @include text(null, null, 500, 1.86, 0.04em);
   width: 80px;
-  height: 16px;
   margin-bottom: 25px;
   text-transform: uppercase;
   color: #fff;
@@ -63,7 +61,7 @@
   }
 }
 .contacts-title {
-  @include text(null, 12px, 500, 1.86, 0.04em);
+  @include text(null, 12px, bold, 1.86, 0.04em);
   margin-bottom: 10px;
 }
 .contacts-description {
@@ -76,7 +74,7 @@
       margin-bottom: 10px;
     }
     .contacts-workdays {
-      @include text(null, 12px, 500, 1.86, 0.04em);
+      @include text(null, 12px, bold, 1.86, 0.04em);
     }
     .contacts-time {
       color: getColor('secondary');
@@ -93,3 +91,4 @@
 }
 // .contacts-mail {
 // }
+
