@@ -234,7 +234,7 @@ img {
 }
 
 .logo__icon {
-  fill: skyblue;
+  fill: #ffb8ca;
 }
 
 @media screen and (max-width: 1279px) {
@@ -250,6 +250,16 @@ img {
 }
 
 .menu-container {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: fixed;
   top: 0;
   left: 0;
@@ -257,41 +267,83 @@ img {
   height: 100vh;
   padding: 60px 20px;
   background-color: #e17992;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   z-index: 1;
 }
 
-.menu__icon {
-  fill: #fafafa;
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .btn--mobile-menu {
   width: 100%;
-  margin-bottom: 19px;
+  margin: 0 auto 19px auto;
 }
 
-.menu-toggle {
+.menu-toggle--page-header {
   position: absolute;
   top: 23px;
   right: 28px;
   background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
 }
 
 .nav-menu__list {
-  padding: 12px 0;
-  width: 100vw;
-  border-top: 1px solid #e18298;
   font-family: DM Sans;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.29;
 }
 
-.nav-menu__list:last-child {
-  border-bottom: 1px solid #e18298;
+.nav-menu__list::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: block;
+  border-top: 1px solid #e18298;
+}
+
+.nav-menu__list::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: block;
+  border-top: 1px solid #e18298;
+}
+
+.nav-menu__list::before {
+  width: 100vw;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
 }
 
 .nav-menu__link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: #ffffff;
+}
+
+.nav-menu__link:hover, .nav-menu__link:focus {
+  color: #d41443;
+}
+
+.nav-menu__link--current {
+  color: #d41443;
 }
 
 .products__subtitle {
