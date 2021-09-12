@@ -12,28 +12,30 @@
 
 .slider__comment {
   position: relative;
-  max-width: 280px;
+  max-width: 480px;
   @include text(DM Sans, 12px, 500, 2.5, null);
   color: getColor('paragraph');
   background-color: getColor('bg-slide');
-  padding: 42px 0 27px;
+  padding: 42px 50px 27px;
   margin-bottom: 29px;
-  & p {
-    max-width: 157px;
-    background: repeating-linear-gradient(
-      getColor('bg-slide') -5px,
-      getColor('bg-slide') 23px,
-      getColor('border') 25px,
-      getColor('border') 25px
-    );
-  }
+}
+
+.slider__text {
+  background: repeating-linear-gradient(
+    getColor('bg-slide') -5px,
+    getColor('bg-slide') 23px,
+    getColor('border') 25px,
+    getColor('border') 25px
+  );
+  
 }
 
 .slider__ico-bg {
   position: absolute;
-  top: 27px;
-  left: 45px;
+  top: 15px;
+  left: 10px;
   fill: getColor('border');
+  z-index: 0;
 }
 
 .slider__points {
