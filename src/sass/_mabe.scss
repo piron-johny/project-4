@@ -1,0 +1,282 @@
+img {
+     display: block; 
+     width: 100%;
+     height: auto;
+    }
+   
+   .mabe{
+     
+       margin-left: auto;
+       margin-right: auto;
+       padding-top: 125px;
+       background: getColor('bg-page');
+   
+       @media   (min-width: 768px){
+           padding-top: 85px;
+           width:100%;
+        }
+       @media   (min-width: 1280px){
+           padding-top: 125px;
+           width:100%;
+        }
+       @media   (min-width: 1280px){
+           display: flex;
+           background-image: url(../images/bg_milk-desktop.png);    
+           background-size: 100%;
+           background-repeat: no-repeat;
+           background-position: bottom;
+          
+          
+        }
+      
+    }
+   
+   
+   .mabe__tradition{
+       font-family: Titan One;
+       font-size: 18px;
+       line-height: 1.16;
+       text-align: center;
+       text-transform: uppercase;
+       color: getColor('secondary');
+       margin-bottom: 15px; 
+   
+       @media  (min-width: 768px){
+           font-size: 26px;
+           line-height: 1.15;
+        }
+       @media  (min-width: 1280px){
+           font-size: 30px;
+           line-height: 1.13;
+        } 
+   
+    }
+   
+   
+   .mabe__text{
+       width: 200px;
+       margin-left: auto;
+       margin-right: auto;
+       font-family: Titan One;
+       font-size: 34px;
+       line-height: 1.14;
+       text-align: center;
+       letter-spacing: 0.04em;
+       text-transform: uppercase;
+       color: getColor('accent'); 
+       margin-bottom: 25px;
+   
+       @media  (min-width: 768px){
+           width: 429px;
+           font-size: 48px;
+           line-height: 1.14;
+           margin-bottom: 50px;
+        }
+   
+       @media  (min-width: 1280px){
+           width: 534px;
+           font-size: 58px;
+           line-height: 1.13;
+           margin-bottom: 55px;
+        }
+   
+   
+    }
+   
+   
+   .mabe__img {
+      margin-left: auto;
+      margin-right: auto; 
+      object-fit: cover;
+      width: 280px;
+      height: 279px;
+   
+      @media  (min-width: 768px){
+         width: 340px;
+         height: 339px;
+        }
+      @media  (min-width: 1280px){
+         width: 516px;
+         height: 516px;
+        }
+      
+    }
+   
+     
+   .mabe__box{
+       position: relative;
+       display: block;
+   
+       @media   (min-width: 768px){
+          margin-left: 17px;
+          padding-top: 50px;
+        }
+   
+       @media   (min-width: 1280px){
+           margin-left: 74px;
+           margin-bottom: 0px;
+           padding-top: 50px;
+        }
+   
+    }
+   
+   .mabe__title{
+     
+       font-family: DM Sans;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 12px;
+       line-height: 162%;
+       color: getColor('paragraph'); 
+       margin-bottom: 47px;
+       padding-left: 30px;
+       padding-right: 30px;
+   
+       @media  (min-width: 768px){
+         font-size: 14px;
+         line-height: 176%;
+         margin-bottom: 47px;
+         padding-left: 0px;
+         padding-right: 16px;
+      
+        } 
+       @media  (min-width: 1280px){
+         font-size: 16px;
+         line-height: 176%;
+         margin-bottom: 35px;
+         padding-left: 0px;
+         padding-right: 0px;
+         
+        } 
+      
+    }
+   
+   .mabe__list{
+      
+       font-family: DM Sans;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 12px;
+       line-height: 162%;
+       color: getColor('text');
+       padding-left: 30px;
+       padding-right: 30px;
+       margin-bottom: 12px;
+      
+       @media  (min-width: 768px){
+         font-size: 14px;
+         line-height: 176%;
+         padding-left: 0px;
+         padding-right: 16px;
+       
+        } 
+      
+       @media  (min-width: 768px){
+           font-size: 14px;
+          line-height: 194%;
+          padding-left: 0px;
+          padding-right: 16px;
+         
+        } 
+    }
+
+   .mabe__love{
+       @media   (min-width: 768px){
+           display: flex;
+        } 
+   
+    }
+   .mabe__cow{
+       margin-bottom: 46px;
+       @media  (min-width: 768px){
+           margin-bottom: 0px;
+        }
+    }
+   
+   .mabe__bg {
+       position: absolute;
+       width: 320px;
+       height: 133px;
+       bottom: 0px;
+       left: -20px;
+   
+       @media  (min-width: 320px){
+          display: none;
+        } 
+   
+       @media  (min-width: 1280px){
+         display: none;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+      
+         width: 1282px;
+         height: 534px;
+        
+        } 
+    }
+   .mabe__accumsan{
+       font-family: DM Sans;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 12px;
+       line-height: 162%;
+       color: getColor('text');  
+       padding-left: 30px;
+       padding-right: 30px;
+       margin-bottom: 17px;
+   
+       @media  (min-width: 768px){
+           font-size: 14px;
+          line-height: 176%;
+          padding-left: 0px;
+          margin-bottom: 62px;
+        }
+       @media  (min-width: 1280px){
+           font-size: 14px;
+          line-height: 194%;
+          padding-left: 0px;
+          margin-bottom: 45px;
+        } 
+   
+    }
+   
+   .mabe__button{   
+      
+       font-family: DM Sans;
+       font-style: normal;
+       font-weight: bold;
+       font-size: 16px;
+       line-height: 1.3125;
+       color: getColor('accent'); 
+       background: getColor('primary');
+       border-radius: 22px;
+       border: none;
+       cursor: pointer;
+       margin-left: 30px;  
+       width: 176px;
+       height: 44px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   
+       &:hover{
+          background-color: getColor('primary');
+   
+        }
+   
+       @media   (min-width: 768px){
+           margin-left: 0px; 
+        } 
+    
+    }
+   .mabe__more{
+       margin-right: 14px;
+    }
+   .mabe__vector{
+      
+       display: block;
+       width: 5px;
+       height: 17px; 
+       color: getColor('accent');
+    }
