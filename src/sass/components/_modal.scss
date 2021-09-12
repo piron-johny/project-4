@@ -169,7 +169,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   width: 18px;
   height: 18px;
 
-  fill: currentColor;
+  fill: getColor(socials-icon);
 }
 
 .form__form-field:hover ~ .form__form-icon,
@@ -194,9 +194,11 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-.form__textarea-form:placeholder-shown {
-  color: getColor(bg-backdrop);
+.form__textarea-form::placeholder {
+  color: getColor(socials-icon);
+}
 
+.form__textarea-form:placeholder-shown {
   @include text(Titan One, 12px, 400, 1.14, 0.01em);
 }
 
@@ -261,23 +263,29 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   height: 30px;
 
   background-color: getColor(primary);
-  border: 1px solid getColor(accent);
-  border-radius: 50%;
+
+  transition: background-color 250ms $cubic;
 
   cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: getColor(accent);
+  }
 }
 
 .button-modal-close__icon {
   width: 11px;
   height: 11px;
 
-  fill: getColor(bg-accent);
+  stroke: getColor(accent);
 
-  transition: fill 250ms $cubic;
+  transition: stroke 250ms $cubic;
 
   .button-modal-close:hover &,
   .button-modal-close:focus & {
-    fill: getColor(accent);
+    stroke: getColor(primary);
   }
 }
 
