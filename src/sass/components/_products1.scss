@@ -1,5 +1,5 @@
 .products__subtitle{
-    text-transform: uppercase;
+   text-transform: uppercase;
    color: getColor('secondary');
    text-align: center;
    margin-bottom: 15px;
@@ -24,30 +24,22 @@
     width: 280px;
     height: 485px;
     border-radius: 24px;
-
-    
 }
-.wrap-icecream{
-   position: absolute; 
-   left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.wrap-icecream__card{
+.icecream__card{
     position: relative;
     top: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
     perspective: 1000px;
+
 }
-.wrap-icecream__front{
-    position: relative;
+.icecream__card--front{
+    position: absolute;
     background-color: getColor('bg-accent');
-    transition: 1s;
     backface-visibility: hidden;
+    transition: 1s;
+
     &::before {
     content: url(../images/products_1-mobile.png);
     position: absolute;
@@ -55,45 +47,29 @@
     top: -113px;
     width: 249px;
     height: 252px;
+ }
 }
-}
-.wrap-icecream__back{
+.icecream__card--back{
+  position: absolute;
+  background-color: getColor('bg-accent');
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: 1s;
+&::before {
+    content: url(../images/products_1-mobile.png);
     position: absolute;
-    background-color: getColor('bg-accent');
-    transition: 1s;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
-}
-.wrap-icecream__card:focus .wrap-icecream__front{
-    transform: rotateY(180deg);
-}
-.wrap-icecream__card:focus .wrap-icecream__back{
-    transform: rotateY(360deg);
-}
-.wrap-coffee__front{
-    position: relative;
-    background-color: getColor('bg-prime');
-    
-    &::before {
-    content: url(../images/products_2-mobile.png);
-    position: absolute;
-    top: -113px;
-    width: 249px;
-    height: 252px;
-}
-}
-.wrap-milkshakes__front{
-    position: relative;
-    background-color: getColor('bg-second');
-   
-    &::before {
-    content: url(../images/products_3-mobile.png);
-    position: absolute;
+    margin: 0;
     top: -113px;
     width: 249px;
     height: 252px;
  }
 }
+.icecream__card:active .icecream__card--front {
+    transform: rotateY(180deg);
+}
+.icecream__card:active .icecream__card--back {
+    transform: rotateY(360deg);
+}  
 .products__name{
     display: inline-block;
     width: 100%;
@@ -124,6 +100,7 @@
     text-align: center;
     color: getColor('primary');
    @include text (DM Sans, 14px, 700, 1.52, 0.04em);
+   
 }
 .products__btn{
     width: 40px;
@@ -136,4 +113,13 @@
     cursor: pointer;
     justify-content: center;
     background-image: url(../images/products_arrow.png);
+    &:hover, &:focus{
+      outline: none;
+    }
+}
+.icecream__exampl{
+  margin-bottom: 10px;
+  text-transform: uppercase;
+    color: getColor('primary');
+    @include text (Titan One, 20px, 400, 1.15, 0.04em);
 }
