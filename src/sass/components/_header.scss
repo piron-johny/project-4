@@ -45,7 +45,7 @@
   }
 
   @media screen and (max-width: 479px) {
-    minwidth: 320px;
+    min-width: 320px;
   }
 
   @include transition(transform, null);
