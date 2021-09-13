@@ -72,5 +72,9 @@
     @include text(DM Sans, 14px, 700, 1.52, 00.04em);
 
     color: getColor('text');
+
+    @media screen and (min-width: 480px) {
+      width: 100%;
+    }
   }
 }
