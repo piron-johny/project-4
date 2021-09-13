@@ -38,7 +38,7 @@
 
     @media screen and (min-width: 768px) {
       width: 340px;
-      @include text(Titan One, 30px, 400, 1.15, null);
+      @include text(Titan One, 26px, 400, 1.15, null);
     }
   }
 
@@ -55,7 +55,7 @@
 
     @media screen and (min-width: 768px) {
       width: 340px;
-      @include text(Titan One, 30px, 400, 1.15, null);
+      @include text(Titan One, 48px, 400, 1.15, null);
     }
   }
 
@@ -72,12 +72,12 @@
 
     color: getColor('paragraph');
 
-    @include text(Titan One, 14px, 400, 1.15, null);
+    @media screen and (min-width: 768px) {
+      @include text(DM Sans, 14px, 700, 1.86, 00.04em);
+    }
   }
 
   &__tel {
-    @include text(DM Sans, 12px, 700, 1.86, 00.04em);
-
     color: getColor('accent');
   }
 
@@ -91,11 +91,12 @@
 
     padding: 25px 0;
 
-    @include text(DM Sans, 14px, 700, 1.52, 00.04em);
+    @include text(DM Sans, 12px, 700, 1.52, 00.04em);
 
     color: getColor('text');
 
     @media screen and (min-width: 768px) {
+      width: 100%;
       height: 75px;
     }
   }
