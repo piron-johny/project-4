@@ -19,6 +19,10 @@
     @media screen and (min-width: 768px) {
       height: 75px;
     }
+
+    @media screen and (min-width: 1280px) {
+      height: 45px;
+    }
   }
 
   &__content {
@@ -40,6 +44,11 @@
       width: 340px;
       @include text(Titan One, 26px, 400, 1.15, null);
     }
+
+    @media screen and (min-width: 1280px) {
+      width: 100%;
+      @include text(Titan One, 30px, 400, 1.13, null);
+    }
   }
 
   &__title {
@@ -56,6 +65,11 @@
     @media screen and (min-width: 768px) {
       width: 340px;
       @include text(Titan One, 48px, 400, 1.15, null);
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: auto;
+      @include text(Titan One, 58px, 400, 1.14, null);
     }
   }
 
@@ -74,6 +88,10 @@
 
     @media screen and (min-width: 768px) {
       @include text(DM Sans, 14px, 700, 1.86, 00.04em);
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include text(DM Sans, 16px, 700, 1.86, 00.04em);
     }
   }
 
@@ -95,13 +113,17 @@
 
     color: getColor('text');
 
-
     @media screen and (min-width: 480px) {
       width: 100%;
     }
+
     @media screen and (min-width: 768px) {
       width: 100%;
       height: 75px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      height: 45px;
     }
   }
 }
