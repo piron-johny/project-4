@@ -151,29 +151,7 @@
   }
 }
 
-.hero__link--products {
-  padding: 7px 14px;
-  font-family: DM Sans, sans-serif;
-  font-size: 8px;
-  line-height: 1.25;
-
-  color: #ffffff;
-  background-color: #d41443;
-  border-radius: 20px;
-
-  @media screen and (min-width: 1280px) {
-    padding: 10px 20px;
-    font-size: 14px;
-    line-height: 1.2857;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: #c7133e;
-  }
-}
-
-.hero__link--made {
+.hero__link {
   padding: 7px 14px;
   font-family: DM Sans, sans-serif;
   font-size: 8px;
@@ -191,8 +169,8 @@
 
   &:hover,
   &:focus {
-    color: #d41443;
-    background-color: #ecebeb;
+    color: #ffffff;
+    background-color: #d41443;
   }
 }
 
