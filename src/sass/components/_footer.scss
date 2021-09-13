@@ -6,16 +6,6 @@
 
   background: getColor('bg-page');
 
-  &__lable-title {
-    width: 230px;
-
-    @include text(Titan One, 18px, 400, 1.17, null);
-
-    text-transform: uppercase;
-
-    color: getColor('secondary');
-  }
-
   &::after {
     content: '';
     position: absolute;
@@ -25,6 +15,31 @@
     width: 100%;
     height: 90px;
     border-top: 1px solid getColor('border');
+
+    @media screen and (min-width: 768px) {
+      height: 75px;
+    }
+  }
+
+  &__content {
+    @media screen and (min-width: 768px) {
+      @include flex(null, null, space-between, baseline);
+    }
+  }
+
+  &__lable-title {
+    width: 230px;
+
+    @include text(Titan One, 18px, 400, 1.17, null);
+
+    text-transform: uppercase;
+
+    color: getColor('secondary');
+
+    @media screen and (min-width: 768px) {
+      width: 340px;
+      @include text(Titan One, 26px, 400, 1.15, null);
+    }
   }
 
   &__title {
@@ -37,6 +52,11 @@
     text-transform: uppercase;
 
     color: getColor('accent');
+
+    @media screen and (min-width: 768px) {
+      width: 340px;
+      @include text(Titan One, 48px, 400, 1.15, null);
+    }
   }
 
   &__socials {
@@ -51,11 +71,13 @@
     text-align: right;
 
     color: getColor('paragraph');
+
+    @media screen and (min-width: 768px) {
+      @include text(DM Sans, 14px, 700, 1.86, 00.04em);
+    }
   }
 
   &__tel {
-    @include text(DM Sans, 12px, 700, 1.86, 00.04em);
-
     color: getColor('accent');
   }
 
@@ -69,12 +91,17 @@
 
     padding: 25px 0;
 
-    @include text(DM Sans, 14px, 700, 1.52, 00.04em);
+    @include text(DM Sans, 12px, 700, 1.52, 00.04em);
 
     color: getColor('text');
 
+
     @media screen and (min-width: 480px) {
       width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      height: 75px;
     }
   }
 }
