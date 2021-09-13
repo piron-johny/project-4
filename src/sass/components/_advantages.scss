@@ -1,12 +1,15 @@
 .advantages__list {
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-left: -30px;
+    margin-right: -30px;
   }
 }
 
 .advantages__item {
   display: block;
   width: 230px;
+  margin-bottom: 35px;
   &--first {
     &::before {
       content: url(../images/advantages_icon_1.png);
@@ -28,12 +31,6 @@
       content: url(../images/advantages_icon_3.png);
       display: block;
       margin-bottom: 20px;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 35px;
     }
   }
 
