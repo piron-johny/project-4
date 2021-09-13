@@ -46,10 +46,12 @@
   }
 
   &--mobile-menu {
-    width: calc(100% - 2 * 20px);
+    width: 100%;
+  }
 
-    @media screen and (min-width: 768px) {
-      width: calc(100% - 2 * 34px);
-    }
+  .btn__icon {
+    margin-left: 12px;
+    fill: currentColor;
+    stroke: currentColor;
   }
 }

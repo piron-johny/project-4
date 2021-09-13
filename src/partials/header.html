@@ -12,22 +12,31 @@
                 <li class="nav__list"><a href="#" class="nav__link">Contact</a></li>
             </ul>
             
-            <button type="button" class="btn btn--page-header">Buy now</button>
+            <button type="button" class="btn btn--page-header">
+                <span class="btn-header__text">Buy now</span>
+                <svg class="btn__icon" width="8" height="8">
+                    <use href="images/icons.svg#bracket"></use>
+                </svg>
+            </button>
         
         <button class="menu-toggle menu-toggle--page-header js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="menu-icon" width="20" height="12">
-                <use href="./images/icons.svg#Burger1"></use>
+            <svg class="menu-icon__burger" width="20" height="12">
+                <use href="./images/icons.svg#burger"></use>
             </svg>
         </button>
 
         <div class="menu-container is-op js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
+            <button class="menu-toggle menu-toggle--mobile-menu js-close-menu">
                 <svg class="menu-icon" width="14" height="14">
-                    <use href="images/icons.svg#close-1"></use>
+                    <use href="images/icons.svg#close"></use>
                 </svg>
             </button>
 
-            <button type="button" class="btn btn--mobile-menu">Buy now</button>
+            <button type="button" class="btn btn--mobile-menu">
+                <span class="btn-menu__text">Buy now</span>
+                    <svg class="btn__icon" width="8" height="8"><use href="images/icons.svg#bracket"></use>
+                    </svg>
+            </button>
 
             <ul class="nav-menu">
                 <li class="nav-menu__list"><a href="#" class="nav-menu__link nav-menu__link--current">Home</a></li>
