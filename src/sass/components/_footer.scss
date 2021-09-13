@@ -60,14 +60,16 @@
   }
 
   &__reserved {
-    display: inline-block;
+    @include flex(null, null, center, center);
+    width: 150px;
+    height: 90px;
     margin-top: 45px;
+    margin-right: auto;
+    margin-left: auto;
 
-    padding: 25px 65px;
+    padding: 25px 0;
 
     @include text(DM Sans, 14px, 700, 1.52, 00.04em);
-
-    text-align: center;
 
     color: getColor('text');
   }
