@@ -1,0 +1,57 @@
+.btn {
+  @include flex(null, null, center, center);
+
+  width: 170px;
+  height: 44px;
+
+  @include text(DM Sans, 16px, 700, 1.31, null);
+
+  color: getColor('accent');
+  background-color: getColor('primary');
+
+  border-radius: 22px;
+
+  cursor: pointer;
+
+  @include transition(color, background-color);
+
+  @media screen and (min-width: 768px) {
+    width: auto;
+    padding: 0, 35px;
+  }
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+    background-color: getColor('primary--hover');
+  }
+
+  &--accent {
+    color: getColor('primary');
+    background-color: getColor('accent');
+
+    &:hover,
+    &:focus {
+      color: getColor('primary');
+      background-color: getColor('accent--hover');
+    }
+  }
+
+  &--hero {
+    width: auto;
+    height: auto;
+    padding: 7px, 14px;
+
+    @include text(DM Sans, 8px, 400, 1.25, null);
+  }
+
+  &--mobile-menu {
+    width: 100%;
+  }
+
+  .btn__icon {
+    margin-left: 12px;
+    fill: currentColor;
+    stroke: currentColor;
+  }
+}

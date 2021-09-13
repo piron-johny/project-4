@@ -1,0 +1,80 @@
+.slider__item {
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.slider__img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.slider__comment {
+  position: relative;
+  max-width: 480px;
+  @include text(DM Sans, 12px, 500, 2.5, null);
+  color: getColor('paragraph');
+  background-color: getColor('bg-slide');
+  padding: 42px 50px 27px;
+  margin-bottom: 29px;
+}
+
+.slider__text {
+  background: repeating-linear-gradient(
+    getColor('bg-slide') -5px,
+    getColor('bg-slide') 23px,
+    getColor('border') 25px,
+    getColor('border') 25px
+  );
+  
+}
+
+.slider__ico-bg {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  fill: getColor('border');
+  z-index: 0;
+}
+
+.slider__points {
+  @include flex(null, null, center, null);
+  margin-bottom: 18px;
+}
+
+.slider__ico-point {
+  fill: getColor('accent--hover');
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.slider__name {
+  @include text(DM Sans, 14px, 500, 1.86, null);
+  color: getColor('paragraph');
+  padding-bottom: 30px;
+}
+
+.slick-dots {
+  @include flex(null, wrap, center, null);
+  & button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background-color: getColor('lide-marker');
+    border-radius: 50%;
+    border: none;
+  }
+  & li:not(:last-child) {
+    margin-right: 18px;
+  }
+  & li.slick-active {
+    background: url('../images/customer-home-ico.svg') center 10px no-repeat;
+    & button {
+      background-color: transparent;
+    }
+  }
+}
+
+
