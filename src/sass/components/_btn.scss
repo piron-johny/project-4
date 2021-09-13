@@ -1,5 +1,5 @@
 .btn {
-  @include flex(null, null, center, flex-end);
+  @include flex(null, null, center, center);
 
   width: 170px;
   height: 44px;
