@@ -18,6 +18,18 @@
   background-color: getColor('bg-slide');
   padding: 42px 50px 27px;
   margin-bottom: 29px;
+  @media screen and (min-width:480px) {
+    max-width: 620px;
+    width: 100%;
+    padding: 30px 38px;
+    @include text(DM Sans, 14px, 500, 2.14, 0.04em);
+  }
+  @media screen and (min-width:1280px) {
+    max-width: 926px;
+    width: 100%;
+    padding: 32px 54px;
+    @include text(DM Sans, 16px, 500, 1.88, 0.04em);
+  }
 }
 
 .slider__text {
@@ -35,7 +47,14 @@
   top: 15px;
   left: 10px;
   fill: getColor('border');
-  z-index: 0;
+  @media screen and (min-width:480px) {
+    top: 5px;
+    left: 3px;
+  }
+  @media screen and (min-width:1280px) {
+    top: 10px;
+    left: 20px;
+  }
 }
 
 .slider__points {
