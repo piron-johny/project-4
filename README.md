@@ -77,4 +77,4 @@ npm run dev
           src="./images/hero_ice_cream-mobile.png"
           alt="ice"
           width="171"
-        /> тран пра край
+        /> транзиш пра край
