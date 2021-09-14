@@ -1,10 +1,10 @@
 <section class="section">
   <div class="container contacts">
-    <h2 class="section__title section__title--hidden"></h2>
-    <ul class="contact-list">
+    <h2 class="section__title section__title--visually-hidden"></h2>
+    <ul class="contacts-list">
       <li class="contacts-list__item">
+        <p class="contacts-item__category">CAFE</p>
         <div class="contacts-item">
-          <p class="contacts-item__category">CAFE</p>
           <div class="contacts-item__about">
             <h3 class="contacts-item__about--title">Chicago</h3>
             <p class="contacts-item__about--description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -30,8 +30,8 @@
         </div>
       </li>
       <li class="contacts-list__item">
+        <p class="contacts-item__category contacts-item__category--accent">FOODTRUCK</p>
         <div class="contacts-item">
-          <p class="contacts-item__category contacts-item__category--accent">FOODTRUCK</p>
           <div class="contacts-item__about">
             <h3 class="contacts-item__about--title">Los Angeles</h3>
             <p class="contacts-item__about--description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -57,8 +57,8 @@
         </div>
       </li>
       <li class="contacts-list__item">
+        <p class="contacts-item__category">CAFE</p>
         <div class="contacts-item">
-          <p class="contacts-item__category">CAFE</p>
           <div class="contacts-item__about">
             <h3 class="contacts-item__about--title">Chicago</h3>
             <p class="contacts-item__about--description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -84,18 +84,20 @@
         </div>
       </li>
     </ul>
-    <ul class="contButton-list">
-      <li class="contButton-item">
-        <button type="button" class="btn btn--accent" data-modal-open=""> 
-          <p class="made__more">Our Locations</p> 
-          <span class="btn__vektor btn__vektor--accent">&gt;</span>  
-         </button>
+    <ul class="contbutton-list">
+      <li class="contbutton-item">
+        <button type="button" class="btn btn--accent" data-modal-open>Our Locations
+          <svg class="btn__icon" width="8" height="8">
+            <use href="images/icons.svg#bracket"></use>
+          </svg>
+        </button>
     </li>
-      <li class="contButton-item">
-        <button type="button" class="btn" data-modal-open=""> 
-        <p class="btn__text">Franchise</p> 
-        <span class="btn__vektor">&gt;</span>  
-       </button>
+      <li class="contbutton-item">
+        <button type="button" class="btn" data-modal-open>Franchise
+          <svg class="btn__icon" width="8" height="8">
+            <use href="images/icons.svg#bracket"></use>
+          </svg>
+        </button>
       </li>
     </ul>
   </div>
