@@ -161,6 +161,7 @@
       cursor: pointer;
       color: getColor('text');
       line-height: 1.5;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover,
       &:focus {
         color: getColor('accent')
@@ -218,12 +219,16 @@
         color: getColor('primary');
       }
     }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       background-color: #ECEBEB;
       color: getColor('accent');
     }
     &--accent {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover,
       &:focus {
         background-color: getColor('accent--hover');
