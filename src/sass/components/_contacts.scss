@@ -14,6 +14,7 @@
 
 .contacts {
   position: relative;
+  z-index: 2;
   @include flex(column, null, center, center);
   background-color: getColor('bg-page');
   width: 100%;
@@ -26,12 +27,13 @@
   }
   @media screen and(min-width: 1280px) {
     background-image: linear-gradient(getColor('primary') 102px, getColor('bg-page') 102px);
-    &::before {
-      background-image: url(../../images/contacts_bg.jpg);
-      position: absolute;
-      width: 1280px;
-      height: 382px;
-      top: 102px;
+  }
+  &__img {
+    display: none;
+    position: absolute;
+    top: 102px;
+    @media screen and(min-width:1280px) {
+      display: block;
     }
   }
 }
