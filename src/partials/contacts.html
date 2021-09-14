@@ -1,85 +1,108 @@
 <section class="section">
   <div class="container contacts">
-    <h2 class="section__title section__title--hidden"></h2>
-
-    <ul class="contacts-list">
+    <img src="../src/images/contacts_bg.png" alt="капли" class="contacts__img"
+      srcset="../src/images/contacts_bg.png 1x,
+      ../src/images/contacts_bg@2x.png 2x,
+      ../src/images/contacts_bg@3x.png 3x"
+      media="(min-width: 1280px)">
+    <h2 class="section__title section__title--visually-hidden"></h2>
+    <ul class="contact-list">
       <li class="contacts-list__item">
-        <p class="contacts-category">CAFE</p>
-        <div class="contacts-list__item--box">
-          <h3 class="contacts-title">Chicago</h3>
-          <p class="contacts-description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <p class="contacts-item__category">CAFE</p>
+        <div class="contacts-item">
+          <div class="contacts-item__about">
+            <h3 class="contacts-item__about--title">Chicago</h3>
+            <p class="contacts-item__about--description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          </div>
+        </div>
+        <div class="contacts-item">
+          <ul class="contacts-item__worktime">
+            <li class="contacts-item__worktime--schedule">
+              <h3 class="contacts-item__worktime--workdays">Monday - Friday</h3>
+              <p class="contacts-item__worktime--time">06:00 AM - 10:00 PM</p>
+            </li>
+            <li class="contacts-worktime__schedule">
+              <h3 class="contacts-item__worktime--workdays">Saturday - Sunday</h3>
+              <p class="contacts-item__worktime--time">08:00 AM - 16:00 PM</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts-item">
+          <ul class="contacts-item__links">
+            <li><a href="tel:+610383766284" class="contacts-item__links--tel">+61(0) 383 766 284</a></li>
+            <li><a href="mailto:noreply@envato.com" class="contacts-item__links--mail">noreply@envato.com</a></li>
+          </ul>
         </div>
       </li>
       <li class="contacts-list__item">
-        <ul class="contacts-worktime">
-          <li class="contacts-worktime__schedule">
-            <h3 class="contacts-workdays">Monday - Friday</h3>
-            <p class="contacts-time">06:00 AM - 10:00 PM</p>
-          </li>
-          <li class="contacts-worktime__schedule">
-            <h3 class="contacts-workdays">Saturday - Sunday</h3>
-            <p class="contacts-time">08:00 AM - 16:00 PM</p>
-          </li>
-        </ul>
+        <p class="contacts-item__category contacts-item__category--accent">FOODTRUCK</p>
+        <div class="contacts-item">
+          <div class="contacts-item__about">
+            <h3 class="contacts-item__about--title">Los Angeles</h3>
+            <p class="contacts-item__about--description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          </div>
+        </div>
+        <div class="contacts-item">
+          <ul class="contacts-item__worktime">
+            <li class="contacts-item__worktime--schedule">
+              <h3 class="contacts-item__worktime--workdays">Monday - Friday</h3>
+              <p class="contacts-item__worktime--time">06:00 AM - 10:00 PM</p>
+            </li>
+            <li class="contacts-worktime__schedule">
+              <h3 class="contacts-item__worktime--workdays">Saturday - Sunday</h3>
+              <p class="contacts-item__worktime--time">08:00 AM - 16:00 PM</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts-item">
+          <ul class="contacts-item__links">
+            <li><a href="tel:+610383766284" class="contacts-item__links--tel">+61(0) 383 766 284</a></li>
+            <li><a href="mailto:noreply@envato.com" class="contacts-item__links--mail">noreply@envato.com</a></li>
+          </ul>
+        </div>
       </li>
-
       <li class="contacts-list__item">
-        <a href="tel:+610383766284" class="contacts-tel">+61(0) 383 766 284</a>
-        <a href="mailto:noreply@envato.com" class="contacts-mail">noreply@envato.com</a>
+        <p class="contacts-item__category">CAFE</p>
+        <div class="contacts-item">
+          <div class="contacts-item__about">
+            <h3 class="contacts-item__about--title">Chicago</h3>
+            <p class="contacts-item__about--description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          </div>
+        </div>
+        <div class="contacts-item">
+          <ul class="contacts-item__worktime">
+            <li class="contacts-item__worktime--schedule">
+              <h3 class="contacts-item__worktime--workdays">Monday - Friday</h3>
+              <p class="contacts-item__worktime--time">06:00 AM - 10:00 PM</p>
+            </li>
+            <li class="contacts-worktime__schedule">
+              <h3 class="contacts-item__worktime--workdays">Saturday - Sunday</h3>
+              <p class="contacts-item__worktime--time">08:00 AM - 16:00 PM</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts-item">
+          <ul class="contacts-item__links">
+            <li><a href="tel:+610383766284" class="contacts-item__links--tel">+61(0) 383 766 284</a></li>
+            <li><a href="mailto:noreply@envato.com" class="contacts-item__links--mail">noreply@envato.com</a></li>
+          </ul>
+        </div>
       </li>
     </ul>
-
-    <ul class="contacts-list">
-      <li class="contacts-list__item">
-        <p class="contacts-category contacts-category__accent">FOODTRUCK</p>
-        <div class="contacts-list__item--box">
-          <h3 class="contacts-title">Los Angeles</h3>
-          <p class="contacts-description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        </div>
-      </li>
-
-      <li class="contacts-list__item">
-        <ul class="contacts-worktime">
-          <li class="contacts-worktime__schedule">
-            <h3 class="contacts-workdays">Monday - Friday</h3>
-            <p class="contacts-time">06:00 AM - 10:00 PM</p>
-          </li>
-          <li class="contacts-worktime__schedule">
-            <h3 class="contacts-workdays">Saturday - Sunday</h3>
-            <p class="contacts-time">08:00 AM - 16:00 PM</p>
-          </li>
-        </ul>
-      </li>
-      <li class="contacts-list__item">
-        <a href="tel:+610383766284" class="contacts-tel">+61(0) 383 766 284</a>
-        <a href="mailto:noreply@envato.com" class="contacts-mail">noreply@envato.com</a>
-      </li>
-    </ul>
-
-    <ul class="contacts-list">
-      <li class="contacts-list__item">
-        <p class="contacts-category">CAFE</p>
-        <div class="contacts-list__item--box">
-          <h3 class="contacts-title">New York</h3>
-          <p class="contacts-description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        </div>
-        </li>
-
-      <li class="contacts-list__item">
-        <ul class="contacts-worktime">
-          <li class="contacts-worktime__schedule">
-            <h3 class="contacts-workdays">Monday - Friday</h3>
-            <p class="contacts-time">06:00 AM - 10:00 PM</p>
-          </li>
-          <li class="contacts-worktime__schedule">
-            <h3 class="contacts-workdays">Saturday - Sunday</h3>
-            <p class="contacts-time">08:00 AM - 16:00 PM</p>
-          </li>
-        </ul>
-      </li>
-      <li class="contacts-list__item">
-        <a href="tel:+610383766284" class="contacts-tel">+61(0) 383 766 284</a>
-        <a href="mailto:noreply@envato.com" class="contacts-mail">noreply@envato.com</a>
+    <ul class="contbutton-list">
+      <li class="contbutton-item">
+        <button type="button" class="btn" data-modallocation-open>Our Locations
+          <svg class="btn__icon" width="8" height="8">
+            <use href="images/icons.svg#bracket"></use>
+          </svg>
+        </button>
+    </li>
+      <li class="contbutton-item">
+        <button type="button" class="btn" data-modalfranchaise-open>Franchise
+          <svg class="btn__icon" width="8" height="8">
+            <use href="images/icons.svg#bracket"></use>
+          </svg>
+        </button>
       </li>
     </ul>
   </div>
