@@ -22,8 +22,8 @@
 
   &:hover,
   &:focus {
-    color: getColor('accent');
-    background-color: getColor('primary--hover');
+    color: getColor('primary');
+    background-color: getColor('accent');
   }
 
   &--accent {
@@ -32,8 +32,8 @@
 
     &:hover,
     &:focus {
-      color: getColor('primary');
-      background-color: getColor('accent--hover');
+      color: getColor('accent');
+      background-color: getColor('primary');
     }
   }
 
