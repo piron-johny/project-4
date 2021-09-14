@@ -12,3 +12,12 @@ $(document).ready(function() {
        $('html, body').animate({scrollTop:0}, '400');
      });
 });
+
+$(document).ready(function() {
+  $('a[href^="#"]').click(function(){ 
+    let anchor = $(this).attr('href');  
+    $('html, body').animate({
+      scrollTop:  $(anchor).offset().top
+    }, 400);
+  });
+});
