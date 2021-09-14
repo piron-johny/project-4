@@ -118,6 +118,7 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   @media screen and (min-width: 768px) {
     font-size: 22px;
@@ -174,6 +175,7 @@
   color: #ffffff;
   background-color: #d41443;
   border-radius: 20px;
+  border: 2px solid #d41443;
 
   @media screen and (min-width: 1280px) {
     padding: 10px 20px;
@@ -185,6 +187,8 @@
   &:focus {
     color: #d41443;
     background-color: #ffffff;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -197,6 +201,7 @@
   color: #d41443;
   background-color: #ffffff;
   border-radius: 20px;
+  border: 2px solid #ffffff;
 
   @media screen and (min-width: 1280px) {
     padding: 10px 20px;
@@ -208,6 +213,8 @@
   &:focus {
     color: #ffffff;
     background-color: #d41443;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -255,19 +262,27 @@
   line-height: 1.5;
 
   color: #ffffff;
-  margin-bottom: 7px;
+  margin-bottom: 15px;
 
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.4285;
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
 .hero-milk__link {
   width: 18px;
   height: 18px;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 2px solid #d41443;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
   @media screen and (min-width: 1280px) {
     width: 26px;
