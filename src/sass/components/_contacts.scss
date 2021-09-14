@@ -163,3 +163,11 @@
     }
   }
 }
+// Вакцына 
+.contacts-list__item:nth-child(2) {
+  padding-bottom: 43px;
+}
+.contacts-list__item:not(:first-child) {
+  padding-top: 43px;
+  border-top: none;
+}
