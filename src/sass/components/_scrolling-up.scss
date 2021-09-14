@@ -1,0 +1,49 @@
+.scrolling-up {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  @include flex(null, null, center, center);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: getColor('bg-accent');
+  color: getColor('accent');
+  opacity: 0;
+
+  @include transition(opacity, null);
+
+  @media screen and (min-width: 768px) {
+    bottom: 35px;
+    right: 35px;
+
+    width: 60px;
+    height: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 80px;
+    height: 80px;
+  }
+
+  opacity: 0.3;
+
+  &.show {
+    display: none;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.5);
+    }
+
+    @media screen and (min-width: 1280px) {
+      transform: scale(2);
+    }
+  }
+}
