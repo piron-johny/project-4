@@ -17,6 +17,7 @@ $colors: (
   'slide-home': #d31342,
   'slide-marker': #d9d9d9,
   'socials-icon': #fea5bb,
+  'bg-backdrop': rgba(255, 184, 202, 0.4),
 );
 
 @function getColor($key) {

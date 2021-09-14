@@ -13,6 +13,7 @@
   }
 })();
 
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modalread-open]'),
@@ -30,9 +31,9 @@
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modallocaition-open]'),
-    closeModalBtn: document.querySelector('[data-modallocaition-close]'),
-    modal: document.querySelector('[data-modallocaition]'),
+    openModalBtn: document.querySelector('[data-modallocation-open]'),
+    closeModalBtn: document.querySelector('[data-modallocation-close]'),
+    modal: document.querySelector('[data-modallocation]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -48,6 +49,22 @@
     openModalBtn: document.querySelector('[data-modalfranchise-open]'),
     closeModalBtn: document.querySelector('[data-modalfranchise-close]'),
     modal: document.querySelector('[data-modalfranchise]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('backdrop--is-hidden');
+  }
+})();
+
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modalmob-open]'),
+    closeModalBtn: document.querySelector('[data-modalmob-close]'),
+    modal: document.querySelector('[data-modalmob]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
