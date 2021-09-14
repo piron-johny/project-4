@@ -57,24 +57,5 @@ npm run dev
   используемые изображения чтобы не нагружать систему оптимизацией картинок, так как на слабых
   компьютерах это может занять много времени.
 
-<img
-          srcset="
-            ./images/hero_ice_cream-mobile.png   767w,
-            ./images/hero_ice_cream-tablet.png  1279w,
-            ./images/hero_ice_cream-desktop.png 1280w
-          "
-          src="./images/hero_ice_cream-mobile.png"
-          alt="ice"
-          sizes="(min-width: 960px) 25vw, (min-width: 576px) 50vw,  100vw"
-        />
-
-<img
-          srcset="
-            ./images/hero_ice_cream-mobile.png    1x,
-            ./images/hero_ice_cream-mobile@2x.png 2x,
-            ./images/hero_ice_cream-mobile@3x.png 3x
-          "
-          src="./images/hero_ice_cream-mobile.png"
-          alt="ice"
-          width="171"
-        /> транзиш пра край
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0,
+0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
