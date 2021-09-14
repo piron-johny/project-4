@@ -42,6 +42,14 @@
 
     color: getColor('secondary');
 
+    @media screen and (min-width: 768px) {
+      @include text(Titan One, 26px, 400, 1.15, null);
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include text(Titan One, 30px, 400, 1.13, null);
+    }
+
     &--visually-hidden {
       @extend %visually-hidden;
     }
@@ -54,6 +62,14 @@
     text-transform: uppercase;
 
     color: getColor('accent');
+
+    @media screen and (min-width: 768px) {
+      @include text(Titan One, 48px, 400, 1.15, null);
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include text(Titan One, 58px, 400, 1.14, null);
+    }
 
     &--visually-hidden {
       @extend %visually-hidden;
