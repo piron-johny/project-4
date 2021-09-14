@@ -275,7 +275,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   height: 30px;
 
   background-color: getColor(primary);
-
+  border: solid 1px getColor(accent);
   transition: background-color 250ms $cubic;
 
   cursor: pointer;
@@ -306,7 +306,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   padding-right: 34px;
   padding-left: 34px;
 
-  border-color: getColor(accent);
+  border: solid 1px getColor(accent);
 }
 
 // READ ME FORM
