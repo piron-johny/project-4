@@ -2,27 +2,15 @@
 <section class="hero">
   <div class="container-hero">
     <div class="hero-ice__thumb">
-      <picture>
-        <!-- <source
-          srcset="
-            ./images/hero_ice_cream-mobile.webp   767w,
-            ./images/hero_ice_cream-tablet.webp  1279w,
-            ./images/hero_ice_cream-desktop.webp 1280w
-          "
-          type="image/webp"
-        /> -->
-
-        <img
-          srcset="
-            ./images/hero_ice_cream-mobile.png    1x,
-            ./images/hero_ice_cream-mobile@2x.png 2x,
-            ./images/hero_ice_cream-mobile@3x.png 3x
-          "
-          src="./images/hero_ice_cream-mobile.png"
-          alt="ice"
-          sizes="(min-width: 1280px) 25vw, (min-width: 320px) 60vw, 100vw"
-        />
-      </picture>
+      <img
+        srcset="
+          ./images/hero_ice_cream-desktop.png    1x,
+          ./images/hero_ice_cream-desktop@2x.png 2x,
+          ./images/hero_ice_cream-desktop@3x.png 3x
+        "
+        src="./images/hero_ice_cream-desktop.png"
+        alt="ice"
+      />
     </div>
 
     <div class="hero__content">
@@ -32,18 +20,26 @@
       </h1>
       <ul class="hero__list">
         <li class="hero__item">
-          <a href="#" class="hero__link">Products</a>
+          <a href="#" class="hero__link--products">Products</a>
         </li>
 
         <li class="hero__item">
-          <a href="#" class="hero__link">How it’s made?</a>
+          <a href="#" class="hero__link--made">How it’s made?</a>
         </li>
       </ul>
     </div>
 
     <div class="hero-milk">
       <div class="hero-milk__thumb">
-        <img src="./images/hero_milk-tablet.png" alt="milk" />
+        <img
+          srcset="
+            ./images/hero_milk-desktop.png    1x,
+            ./images/hero_milk-desktop@2x.png 2x,
+            ./images/hero_milk-desktop@3x.png 3x
+          "
+          src="./images/hero_milk-desktop.png"
+          alt="milk"
+        />
       </div>
       <div class="hero-milk-bio">
         <p class="hero-milk__text">
@@ -51,22 +47,40 @@
           ut labore et
         </p>
         <a href="#" class="hero-milk__link">
-          <img src="./images/hero_arrow-tablet.png" alt="arrow right" />
+          <img
+            srcset="
+              ./images/hero_arrow-right.png    1x,
+              ./images/hero_arrow-right@2x.png 2x,
+              ./images/hero_arrow-right@3x.png 3x
+            "
+            src="./images/hero_arrow-right.png"
+            alt="milk"
+          />
         </a>
       </div>
     </div>
 
     <div class="right-side">
       <div class="right-side--cafes">
-        <img src="./images/hero_cafes-tablet.png" alt="number of cafes" />
+        <p class="cafes-number">16</p>
+        <p class="right-side__text">cafes</p>
       </div>
 
       <div class="right-side--trucks">
-        <img src="./images/hero_trucks-tablet.png" alt="number of trucks" />
+        <p class="trucks-number">23</p>
+        <p class="right-side__text">food trucks</p>
       </div>
 
       <div class="right-side--hot-girl">
-        <img src="./images/hero_girl-tablet.png" alt="hot girl" />
+        <img
+          srcset="
+            ./images/hero_girl-desktop.png    1x,
+            ./images/hero_girl-desktop@2x.png 2x,
+            ./images/hero_girl-desktop@3x.png 3x
+          "
+          src="./images/hero_girl-desktop.png"
+          alt="hot girl"
+        />
       </div>
     </div>
   </div>
