@@ -18,77 +18,125 @@
   width: 100%;
   height: 100%;
   @media screen and (max-width: 767px) {
-    background-image: linear-gradient(#fff 84px, #fff5f6 84px);
+    background-image: linear-gradient(getColor('primary') 84px, getColor('bg-page') 84px);
   }
 }
-.contacts-list {
+.contact-list {
   display: flex;
   flex-direction: column;
-  width: 220px;
-  padding: 43px 20px;
-  background-color: #fff;
-  border-radius: 24px;
-  box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
+}
+.contacts-list {
   &:not(:last-child) {
     margin-bottom: 20px;
-  }
-  @include text(DM Sans, 12px, 500, null, null);
+  }  
   &__item {
-    &--box {
-      padding-bottom: 25px;
-    }
-    &:not(:first-child) {
-      padding-top: 25px;
-      border-top: 1px solid getColor('border');
-    }
-    &:nth-child(2) {
-      padding-bottom: 25px;
-    }
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    padding: 43px 20px;
+    @include text(DM Sans, 12px, 500, null, null);
+    background-color: getColor('primary');
+    border-radius: 24px;
+    box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
+    margin-bottom: 20px;
   }
 }
-.contacts-category {
-  @include flex(null, null, center, center);
-  @include text(null, null, 500, 1.86, 0.04em);
-  width: 80px;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: getColor('bg-prime');
-  border-radius: 4px;
-  &__accent {
-    width: 130px;
-    background-color: getColor('bg-second');
+.contacts-item {
+  &:not(:last-child) {
+    padding-bottom: 25px;
+    border-bottom: 1px solid getColor('border');
   }
-}
-.contacts-title {
-  @include text(null, 12px, bold, 1.86, 0.04em);
-  margin-bottom: 10px;
-}
-.contacts-description {
-  @include text(null, 12px, 500, 1.5, null);
-  color: getColor('text');
-}
-.contacts-worktime {
-  &__schedule {
-    &:first-child {
+  &:not(:first-child) {
+    padding-top: 25px;
+  }
+  &__category {
+    @include flex(null, null, center, center);
+    @include text(null, null, 500, 1.86, 0.04em);
+    width: 80px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: getColor('primary');
+    background-color: getColor('bg-prime');
+    border-radius: 4px;
+    @media screen and (max-width: 767px) {
+      height: 16px;
+    }
+    &--accent {
+      width: 130px;
+      background-color: getColor('bg-second');
+    }
+  }
+  .contacts-item__about {
+    &--title {
+      @include text(null, 12px, bold, 1.86, 0.04em);
       margin-bottom: 10px;
     }
-    .contacts-workdays {
-      @include text(null, 12px, bold, 1.86, 0.04em);
-    }
-    .contacts-time {
-      color: getColor('secondary');
-      line-height: 1.86;
+    &--description {
+      @include text(null, 12px, 500, 1.5, null);
+      color: getColor('text');
     }
   }
-}
-.contacts-tel,
-.contacts-mail {
-  text-decoration: none;
+  .contacts-item__worktime {
+    &--schedule {
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+    &--workdays {
+      @include text(null, 12px, bold, 1.86, 0.04em);
+    }
+    &--time {
+        color: getColor('secondary');
+        line-height: 1.86;
+    }
+  }
+  .contacts-item__links {
+    &--tel,
+    &--mail {
+      text-decoration: none;
   cursor: pointer;
   color: getColor('text');
   line-height: 1.5;
+    }
+  }
 }
-// .contacts-mail {
-// }
-
+.contButton-list {
+  @include flex(column, null, null, null);
+  .contButton-item {
+    position: relative;
+  }
+  .btn {
+    border: none;
+    padding: 0;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.3125;
+    // color: #d41443;
+    // background: #ffffff;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    width: 176px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--accent {
+      margin-bottom: 10px;
+    }
+    &__text {
+      margin-right: 14px;
+    }
+    &__vektor {
+      display: block;
+      color: getColor('accent');
+      width: 5px;
+      height: 18px;
+      &--accent {
+        color: getColor('primary');
+      }
+    }
+  }
+}
