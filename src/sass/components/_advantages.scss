@@ -15,25 +15,41 @@
 
   &--first {
     &::before {
-      content: url(../images/advantages_icon_1.png);
+      content: '';
+      background-image: url(../images/advantages_icon_1.png);
+      background-repeat: no-repeat;
+
+      width: 33px;
+      height: 50px;
       display: block;
       margin-bottom: 20px;
+      @include transition(transform, null);
     }
   }
 
   &--second {
     &::before {
-      content: url(../images/advantages_icon_2.png);
+      content: '';
+      background-image: url(../images/advantages_icon_2.png);
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
       display: block;
       margin-bottom: 20px;
+      @include transition(transform, null);
     }
   }
 
   &--third {
     &::before {
-      content: url(../images/advantages_icon_3.png);
+      content: '';
+      background-image: url(../images/advantages_icon_3.png);
+      background-repeat: no-repeat;
+      width: 44px;
+      height: 50px;
       display: block;
       margin-bottom: 20px;
+      @include transition(transform, null);
     }
   }
 
@@ -42,6 +58,10 @@
     margin-right: 30px;
     margin-left: 30px;
     margin-bottom: 0;
+  }
+
+  &:hover::before {
+    transform: rotate(30deg);
   }
 }
 
