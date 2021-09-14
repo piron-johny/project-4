@@ -1,217 +1,188 @@
 img {
-     display: block; 
-     width: 100%;
-     height: auto;
-    }
-   
-   .made{
-     
-       margin-left: auto;
-       margin-right: auto;
-       padding-top: 125px;
-       background: getColor('bg-page');
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-       @media   (max-width: 479px){
-         background-image: url(../images/bg_milk-mobile.png);    
-         background-size: 100%;
-         background-repeat: no-repeat;
-         background-position: right 0px bottom 40px;
-        
-        
-        }
-   
-       @media   (min-width: 768px){
-           padding-top: 85px;
-           width:100%;
-        }
+.made {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 125px;
+  background: getColor('bg-page');
 
-       @media   (min-width: 1280px){
-           padding-top: 125px;
-           width:100%;
-        }
+  @media (max-width: 479px) {
+    background-image: url(../images/bg_milk-mobile.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right 0px bottom 40px;
+  }
 
-       @media   (min-width: 1280px){
-           display: flex;
-           background-image: url(../images/bg_milk-desktop.png);    
-           background-size: 100%;
-           background-repeat: no-repeat;
-           background-position: right 0px bottom -70px;
-          
-        }
-      
-    }
-   
-   
-   .made__tradition{
-       font-family: Titan One;
-       font-size: 18px;
-       line-height: 1.16;
-       text-align: center;
-       text-transform: uppercase;
-       color: getColor('secondary');
-       margin-bottom: 15px; 
-   
-       @media  (min-width: 768px){
-           font-size: 26px;
-           line-height: 1.15;
-        }
-       @media  (min-width: 1280px){
-           font-size: 30px;
-           line-height: 1.13;
-        } 
-   
-    }
-   
-   
-   .made__text{
-       width: 200px;
-       margin-left: auto;
-       margin-right: auto;
-       font-family: Titan One;
-       font-size: 34px;
-       line-height: 1.14;
-       text-align: center;
-       letter-spacing: 0.04em;
-       text-transform: uppercase;
-       color: getColor('accent'); 
-       margin-bottom: 25px;
-   
-       @media  (min-width: 768px){
-           width: 100%;
-           font-size: 48px;
-           line-height: 1.14;
-           margin-bottom: 50px;
-        }
-   
-       @media  (min-width: 1280px){
-           width: 534px;
-           font-size: 58px;
-           line-height: 1.13;
-           margin-bottom: 55px;
-        }
-   
-   
-    }
-   
-   
-   .made__img {
-      margin-left: auto;
-      margin-right: auto; 
-      object-fit: cover;
-      width: 280px;
-      height: 279px;
-   
-      @media  (min-width: 768px){
-         width: 340px;
-         height: 339px;
-        }
-      @media  (min-width: 1280px){
-         width: 516px;
-         height: 516px;
-        }
-      
-    }
-   
-     
-   .made__box{
-       position: relative;
-       display: block;
+  @media (min-width: 768px) {
+    padding-top: 85px;
+    width: 100%;
+  }
 
+  @media (min-width: 1280px) {
+    padding-top: 125px;
+    width: 100%;
+  }
 
-       @media   (max-width: 767px){
-         padding-left: 30px;
-         padding-right: 30px;
-        }
-   
-       @media   (min-width: 768px){
-          margin-left: 17px;
-          padding-top: 50px;
-        }
-   
-       @media   (min-width: 1280px){
-           margin-left: 74px;
-           margin-bottom: 0px;
-           padding-top: 50px;
-          
-        }
-   
-    }
-   
-   .made__title{
-     
-       font-family: DM Sans;
-       font-style: normal;
-       font-weight: 500;
-       font-size: 12px;
-       line-height: 162%;
-       color: getColor('paragraph'); 
-       margin-bottom: 47px;
-      
-   
-       @media  (min-width: 768px){
-         font-size: 14px;
-         line-height: 176%;
-         margin-bottom: 47px;
-        
-      
-        } 
-       @media  (min-width: 1280px){
-         font-size: 16px;
-         line-height: 176%;
-         margin-bottom: 35px;
-         letter-spacing: 0.04em;
-         
-         
-        } 
-      
-    }
-   
-   .made__list{
-      
-       font-family: DM Sans;
-       font-style: normal;
-       font-weight: 500;
-       font-size: 12px;
-       line-height: 162%;
-       color: getColor('text');
-       margin-bottom: 17px;
+  @media (min-width: 1280px) {
+    display: flex;
+    background-image: url(../images/bg_milk-desktop.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right 0px bottom -70px;
+  }
+}
 
+.made__tradition {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor('secondary');
+  margin-bottom: 15px;
 
-       @media  (min-width: 768px){
-         font-size: 14px;
-         line-height: 176%;
-      
-         letter-spacing: 0.04em;
-         margin-bottom: 62px;
-        } 
-      
-       @media  (min-width: 1280px){
-           font-size: 14px;
-          line-height: 194%;
-          letter-spacing: 0.04em;
-          margin-bottom: 45px;
-        } 
-    }
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
 
+.made__text {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('accent');
+  margin-bottom: 25px;
 
-   .made__love{
-       @media   (min-width: 768px){
-           display: flex;
-        } 
-   
-    }
-   .made__cow{
-       margin-bottom: 46px;
-       @media  (min-width: 768px){
-           margin-bottom: 0px;
-        }
-    }
-   
-   .btn{
-     border: none; 
-     width: 176px;
-     height: 44px;
+  @media (min-width: 768px) {
+    width: 100%;
+    font-size: 48px;
+    line-height: 1.14;
+    margin-bottom: 50px;
+  }
 
-    }
-   
- 
+  @media (min-width: 1280px) {
+    width: 534px;
+    font-size: 58px;
+    line-height: 1.13;
+    margin-bottom: 55px;
+  }
+}
+
+.made__img {
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 280px;
+  height: 279px;
+
+  @media (min-width: 768px) {
+    width: 340px;
+    height: 339px;
+  }
+  @media (min-width: 1280px) {
+    width: 516px;
+    height: 516px;
+  }
+}
+
+.made__box {
+  position: relative;
+  display: block;
+
+  @media (max-width: 767px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 17px;
+    padding-top: 50px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 74px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+  }
+}
+
+.made__title {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: getColor('paragraph');
+  margin-bottom: 47px;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 176%;
+    margin-bottom: 47px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 176%;
+    margin-bottom: 35px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.made__list {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: getColor('text');
+  margin-bottom: 17px;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 176%;
+
+    letter-spacing: 0.04em;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    margin-bottom: 45px;
+  }
+}
+
+.made__love {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+.made__cow {
+  margin-bottom: 46px;
+  @media (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+
+//    .btn{
+//      border: none;
+//      width: 176px;
+//      height: 44px;
+
+//     }

@@ -9,6 +9,7 @@
   color: getColor('accent');
   background-color: getColor('primary');
 
+  border: 2px solid transparent;
   border-radius: 22px;
 
   cursor: pointer;
@@ -17,13 +18,15 @@
 
   @media screen and (min-width: 768px) {
     width: auto;
-    padding: 0, 35px;
+    padding: 0 35px;
   }
 
   &:hover,
   &:focus {
     color: getColor('primary');
     background-color: getColor('accent');
+    border: 2px solid getColor('primary');
+    outline: none;
   }
 
   &--accent {
@@ -34,13 +37,15 @@
     &:focus {
       color: getColor('accent');
       background-color: getColor('primary');
+      border: 2px solid getColor('accent');
+      outline: none;
     }
   }
 
   &--hero {
     width: auto;
     height: auto;
-    padding: 7px, 14px;
+    padding: 7px 14px;
 
     @include text(DM Sans, 8px, 400, 1.25, null);
   }
