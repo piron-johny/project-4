@@ -62,10 +62,12 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
   padding: 40px;
 
-  background-color: getColor(primary);
-  border-radius: 4px;
+  background-color: getColor(bg-page);
+  border-radius: 10px;
   opacity: 1;
   transition: transform 250ms $cubic, opacity 200ms $cubic;
+
+  box-shadow: 4px 4px 3px 6px rgba(0, 0, 0, 0.25);
 
   z-index: 99;
 
@@ -98,7 +100,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__read {
-  background-color: getColor(bg-prime);
+  background-color: getColor(bg-second);
 }
 
 .modal__location {
@@ -116,7 +118,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
   color: getColor(accent);
 
-  @include text(Titan One, 20px, 700, 1.15, 0.03em);
+  @include text(Titan One, 20px, 400, 1.15, 0.03em);
   line-height: 1.15;
   text-align: center;
 }
@@ -127,7 +129,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
 
   color: getColor(accent);
-  @include text(Titan One, 12px, 400, 1.17, 0.01em);
+  @include text(Titan One, 12px, 200, 1.17, 0.01em);
 }
 
 .form__label {
@@ -262,7 +264,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
 .form__link {
   display: block;
-  color: getColor(bg-prime);
+  color: getColor(text);
   margin-left: 4px;
 }
 
