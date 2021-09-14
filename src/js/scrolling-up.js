@@ -1,7 +1,7 @@
 $(document).ready(function() {   
  var btn_top = $('#scrolling-up');  
     $(window).scroll(function() {     
-      if ($(window).scrollTop() > 400) {
+      if ($(window).scrollTop() < 400) {
          btn_top.addClass('show');
        } else {
          btn_top.removeClass('show');
