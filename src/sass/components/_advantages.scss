@@ -9,7 +9,10 @@
 .advantages__item {
   display: block;
   width: 230px;
-  margin-bottom: 35px;
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
   &--first {
     &::before {
       content: url(../images/advantages_icon_1.png);
