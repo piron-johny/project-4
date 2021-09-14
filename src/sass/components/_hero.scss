@@ -32,7 +32,14 @@
   background-image: url(../images/hero_circle_bg.svg);
   background-repeat: no-repeat;
   background-size: 346px 344px;
-  background-position: bottom 75px left 36px;
+
+  @media screen and (max-width: 417px) {
+    background-position: bottom 75px left 36px;
+  }
+
+  @media screen and (min-width: 418px) {
+    background-position: bottom 75px right 36px;
+  }
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -44,7 +51,7 @@
     padding-right: 34px;
 
     background-size: 324px 322px;
-    background-position: bottom 46px left 307px;
+    background-position: bottom 46px right 137px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -53,15 +60,22 @@
     padding-right: 115px;
 
     background-size: 538px 538px;
-    background-position: bottom 75px left 475px;
+    background-position: bottom 75px right 267px;
   }
 }
 
 .hero-ice__thumb {
   position: absolute;
   bottom: 0;
-  left: 117px;
   width: 171px;
+
+  @media screen and (max-width: 417px) {
+    left: 117px;
+  }
+
+  @media screen and (min-width: 418px) {
+    right: 130px;
+  }
 
   @media screen and (min-width: 768px) {
     left: 378px;
@@ -151,7 +165,30 @@
   }
 }
 
-.hero__link {
+.hero__link--products {
+  padding: 7px 14px;
+  font-family: DM Sans, sans-serif;
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: #ffffff;
+  background-color: #d41443;
+  border-radius: 20px;
+
+  @media screen and (min-width: 1280px) {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 1.2857;
+  }
+
+  &:hover,
+  &:focus {
+    color: #d41443;
+    background-color: #ffffff;
+  }
+}
+
+.hero__link--made {
   padding: 7px 14px;
   font-family: DM Sans, sans-serif;
   font-size: 8px;
@@ -258,6 +295,7 @@
   width: 43px;
   height: 44px;
   margin-bottom: 13px;
+  text-align: right;
 
   @media screen and (min-width: 1280px) {
     width: 72px;
@@ -266,10 +304,37 @@
   }
 }
 
+.cafes-number {
+  font-family: Titan One;
+  font-size: 28px;
+  line-height: 1.1428;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.1521;
+  }
+}
+
+.right-side__text {
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.2857;
+  }
+}
+
 .right-side--trucks {
   width: 51px;
   height: 43px;
   margin-bottom: 72px;
+  text-align: right;
 
   @media screen and (min-width: 1280px) {
     width: 92px;
@@ -278,7 +343,21 @@
   }
 }
 
-.right-side-img {
+.trucks-number {
+  font-family: Titan One;
+  font-size: 28px;
+  line-height: 1.1428;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.1521;
+  }
+}
+
+.right-side--hot-girl {
   width: 168px;
   height: 133px;
 

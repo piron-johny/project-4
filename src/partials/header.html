@@ -4,22 +4,23 @@
             <svg class="logo__icon" width="190" height="50"><use href="./images/icons.svg#logo"></use></svg>
         </a>
 
-            <ul class="nav">
-                <li class="nav__list"><a href="#" class="nav__link nav__link--current">Home</a></li>
-                <li class="nav__list"><a href="#" class="nav__link">About us</a></li>
-                <li class="nav__list"><a href="#" class="nav__link">How it’s made?</a></li>
-                <li class="nav__list"><a href="#" class="nav__link">Our products</a></li>
-                <li class="nav__list"><a href="#" class="nav__link">Contact</a></li>
-            </ul>
+            <nav class="page-header__nav">
+                <ul class="nav">
+                    <li class="nav__list"><a href="#" class="nav__link nav__link--current">Home</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">About us</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">How it’s made?</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Our products</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
             
-            <button type="button" class="btn btn--page-header">
-                <span class="btn-header__text">Buy now</span>
+            <button type="button" class="btn page-header__btn" data-modal-open>Buy now
                 <svg class="btn__icon" width="8" height="8">
                     <use href="images/icons.svg#bracket"></use>
                 </svg>
             </button>
         
-        <button class="menu-toggle menu-toggle--page-header js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="menu-toggle menu-toggle__header js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="menu-icon__burger" width="20" height="12">
                 <use href="./images/icons.svg#burger"></use>
             </svg>
@@ -32,10 +33,10 @@
                 </svg>
             </button>
 
-            <button type="button" class="btn btn--mobile-menu">
-                <span class="btn-menu__text">Buy now</span>
-                    <svg class="btn__icon" width="8" height="8"><use href="images/icons.svg#bracket"></use>
-                    </svg>
+            <button type="button" class="btn menu-container__btn" data-modal-open>Buy now
+                <svg class="btn__icon" width="8" height="8">
+                    <use href="images/icons.svg#bracket"></use>
+                </svg>
             </button>
 
             <ul class="nav-menu">
