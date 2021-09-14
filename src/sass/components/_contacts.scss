@@ -13,6 +13,7 @@
 }
 
 .contacts {
+  position: relative;
   @include flex(column, null, center, center);
   background-color: getColor('bg-page');
   width: 100%;
@@ -23,6 +24,16 @@
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(getColor('primary') 78px, getColor('bg-page') 78px);
   }
+  @media screen and(min-width: 1280px) {
+    background-image: linear-gradient(getColor('primary') 102px, getColor('bg-page') 102px);
+    &::before {
+      background-image: url(../../images/contacts_bg.jpg);
+      position: absolute;
+      width: 1280px;
+      height: 382px;
+      top: 102px;
+    }
+  }
 }
 .contact-list {
   @include flex(column, null, null, null);
@@ -30,6 +41,9 @@
   @media screen and(min-width:768px) {
     @include flex(row, null, null, null);
     margin-bottom: 81px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-bottom: 86px;
   }
 }
 .contacts-list {
@@ -56,12 +70,22 @@
         margin-right: 20px;
         }
     }
+    @media screen and(min-width:1280px) {
+      @include text(null, 16px, null, null, null);
+      width: 330px;
+      &:not(:last-child) {
+        margin-right: 30px;
+        }
+    }
   }
 }
 .contacts-item {
   padding: 25px 0;
   @media screen and(min-width:768px) {
     padding: 30px 0;
+  }
+  @media screen and(min-width:1280px) {
+    padding: 32px 0;
   }
   &:last-child {
     padding-bottom: 0;
@@ -106,6 +130,9 @@
       color: getColor('text');
       @media screen and(min-width:768px) {
         @include text(null, null, null, 1.66, null);
+      }
+      @media screen and(min-width:1280px) {
+        @include text(null, null, null, 1.83, null);
       }
     }
   }
@@ -153,9 +180,9 @@
         margin-bottom: 10px;
       }
     }
-    @media screen and(min-width:76px) {
+    @media screen and(min-width:768px) {
       &:first-child {
-        margin-right: 14.5px;
+        margin-right: 15px;
       }
     }
   }
