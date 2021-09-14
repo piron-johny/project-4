@@ -207,48 +207,11 @@ img {
         }
     }
    
-   
-   
-   .made__button{   
-      
-       font-family: DM Sans;
-       font-style: normal;
-       font-weight: bold;
-       font-size: 16px;
-       line-height: 1.3125;
-       color: getColor('accent'); 
-       background: getColor('primary');
-       border-radius: 22px;
-       border: none;
-       cursor: pointer; 
-       width: 176px;
-       height: 44px;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-   
-       &:hover,
-       &:focus{
-          background-color: getColor('primary');
-   
-        }
-    
-    }
-    .made__icon{
-        display: block;
-        width: 5px;
-        height: 17px; 
-        fill: getColor('accent'); 
-        margin-left: 14px;
-    }
+   .btn{
+     border: none; 
+     width: 176px;
+     height: 44px;
 
-   .made__more{
-     margin-right: 14px;
     }
-
-    .made__vektor{
-      display: block;
-      color: getColor('accent');  
-      width: 5px;
-      height: 18px;
-    }
+   
+  
