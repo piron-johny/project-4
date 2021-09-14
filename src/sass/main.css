@@ -788,29 +788,7 @@ img {
   }
 }
 
-.hero__link--products {
-  padding: 7px 14px;
-  font-family: DM Sans, sans-serif;
-  font-size: 8px;
-  line-height: 1.25;
-  color: #ffffff;
-  background-color: #d41443;
-  border-radius: 20px;
-}
-
-@media screen and (min-width: 1280px) {
-  .hero__link--products {
-    padding: 10px 20px;
-    font-size: 14px;
-    line-height: 1.2857;
-  }
-}
-
-.hero__link--products:hover, .hero__link--products:focus {
-  background-color: #c7133e;
-}
-
-.hero__link--made {
+.hero__link {
   padding: 7px 14px;
   font-family: DM Sans, sans-serif;
   font-size: 8px;
@@ -821,16 +799,16 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  .hero__link--made {
+  .hero__link {
     padding: 10px 20px;
     font-size: 14px;
     line-height: 1.2857;
   }
 }
 
-.hero__link--made:hover, .hero__link--made:focus {
-  color: #d41443;
-  background-color: #ecebeb;
+.hero__link:hover, .hero__link:focus {
+  color: #ffffff;
+  background-color: #d41443;
 }
 
 .hero-milk {
