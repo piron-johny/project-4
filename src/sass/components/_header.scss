@@ -1,6 +1,10 @@
 .page-header {
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
   }
   position: absolute;
   top: 0;
@@ -85,7 +89,6 @@
   &:focus {
     color: getColor('accent');
   }
-
 }
 
 .page-header__btn {
@@ -109,7 +112,7 @@
 }
 
 .menu-container__btn {
-  width: 100%;
+  width: calc(100% - 2 * 20px);
   margin: 0 auto 19px auto;
   border: none;
 }
@@ -122,17 +125,15 @@
 .menu-container {
   @media screen and (min-width: 480px) {
     width: 480px;
-    transform: translateX(200%);
   }
 
   @media screen and (max-width: 479px) {
-    min-width: 320px;
+    width: 250px;
   }
 
   @media screen and (min-width: 768px) {
-    left: 20%;
-    width: 600px;
-    transform: translateX(400%);
+    width: 254px;
+    z-index: 1;
   }
 
   @media screen and (min-width: 1280px) {
@@ -145,10 +146,10 @@
 
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  padding: 60px 20px;
+  padding: 60px 0;
   background-color: getColor('bg-burger');
 
   transform: translateX(100%);
@@ -216,22 +217,15 @@
   padding: 0;
   border: none;
 }
-.nav-menu__list::before {
-  content: '';
-  position: absolute;
+.nav-menu__list {
   left: 0;
   display: block;
   width: 100%;
   border-top: 1px solid getColor('border-burger');
-}
 
-.nav-menu__list::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  display: block;
-  width: 100%;
-  border-bottom: 1px solid getColor('border-burger');
+  &:last-child {
+    border-bottom: 1px solid getColor('border-burger');  
+  }
 }
 
 .nav-menu__list {
@@ -246,6 +240,7 @@
   display: block;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 20px;
   color: getColor('primary');
   &:hover,
   &:focus {

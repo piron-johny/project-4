@@ -118,6 +118,7 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   @media screen and (min-width: 768px) {
     font-size: 22px;
@@ -174,6 +175,7 @@
   color: #ffffff;
   background-color: #d41443;
   border-radius: 20px;
+  border: 2px solid #d41443;
 
   @media screen and (min-width: 1280px) {
     padding: 10px 20px;
@@ -185,6 +187,8 @@
   &:focus {
     color: #d41443;
     background-color: #ffffff;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -197,6 +201,7 @@
   color: #d41443;
   background-color: #ffffff;
   border-radius: 20px;
+  border: 2px solid #ffffff;
 
   @media screen and (min-width: 1280px) {
     padding: 10px 20px;
@@ -208,6 +213,8 @@
   &:focus {
     color: #ffffff;
     background-color: #d41443;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -255,19 +262,27 @@
   line-height: 1.5;
 
   color: #ffffff;
-  margin-bottom: 7px;
+  margin-bottom: 15px;
 
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.4285;
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
 .hero-milk__link {
   width: 18px;
   height: 18px;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 2px solid #d41443;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
   @media screen and (min-width: 1280px) {
     width: 26px;
@@ -291,11 +306,11 @@
   }
 }
 
-.right-side--cafes {
+.right-side__cafes {
+  position: relative;
   width: 43px;
   height: 44px;
   margin-bottom: 13px;
-  text-align: right;
 
   @media screen and (min-width: 1280px) {
     width: 72px;
@@ -304,13 +319,30 @@
   }
 }
 
-.cafes-number {
+.right-side__bg {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  right: 0;
+
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.right-side__number--cafes {
+  position: absolute;
+  top: 2px;
+  left: 0;
   font-family: Titan One;
   font-size: 28px;
   line-height: 1.1428;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  z-index: 1;
 
   @media screen and (min-width: 1280px) {
     font-size: 46px;
@@ -318,11 +350,14 @@
   }
 }
 
-.right-side__text {
+.right-side__text--cafes {
+  position: absolute;
   font-family: DM Sans;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
   color: #ffffff;
+  bottom: 2px;
+  left: 12px;
 
   @media screen and (min-width: 1280px) {
     font-size: 14px;
@@ -331,10 +366,10 @@
 }
 
 .right-side--trucks {
+  position: relative;
   width: 51px;
   height: 43px;
   margin-bottom: 72px;
-  text-align: right;
 
   @media screen and (min-width: 1280px) {
     width: 92px;
@@ -343,7 +378,10 @@
   }
 }
 
-.trucks-number {
+.right-side__number--trucks {
+  position: absolute;
+  top: 2px;
+  left: 6px;
   font-family: Titan One;
   font-size: 28px;
   line-height: 1.1428;
@@ -354,6 +392,23 @@
   @media screen and (min-width: 1280px) {
     font-size: 46px;
     line-height: 1.1521;
+    top: 5px;
+    left: 16px;
+  }
+}
+
+.right-side__text--trucks {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #ffffff;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.2857;
   }
 }
 
