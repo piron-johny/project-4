@@ -296,7 +296,6 @@
   width: 43px;
   height: 44px;
   margin-bottom: 13px;
-  text-align: center;
 
   @media screen and (min-width: 1280px) {
     width: 72px;
@@ -307,15 +306,20 @@
 
 .right-side__bg {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 16px;
+  height: 16px;
   top: 0;
   right: 0;
+
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-.right-side__number {
+.right-side__number--cafes {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   font-family: Titan One;
   font-size: 28px;
@@ -331,14 +335,14 @@
   }
 }
 
-.right-side__text {
+.right-side__text--cafes {
   position: absolute;
   font-family: DM Sans;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
   color: #ffffff;
-  bottom: 0;
-  left: 18px;
+  bottom: 2px;
+  left: 12px;
 
   @media screen and (min-width: 1280px) {
     font-size: 14px;
@@ -351,7 +355,6 @@
   width: 51px;
   height: 43px;
   margin-bottom: 72px;
-  text-align: right;
 
   @media screen and (min-width: 1280px) {
     width: 92px;
@@ -360,10 +363,10 @@
   }
 }
 
-.trucks-number {
+.right-side__number--trucks {
   position: absolute;
-  top: 0;
-  left: 16px;
+  top: 2px;
+  left: 6px;
   font-family: Titan One;
   font-size: 28px;
   line-height: 1.1428;
@@ -374,11 +377,24 @@
   @media screen and (min-width: 1280px) {
     font-size: 46px;
     line-height: 1.1521;
+    top: 5px;
+    left: 16px;
   }
 }
 
 .right-side__text--trucks {
+  position: absolute;
+  bottom: 0;
   left: 0;
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #ffffff;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.2857;
+  }
 }
 
 .right-side--hot-girl {
