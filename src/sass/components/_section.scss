@@ -44,6 +44,10 @@
     background-color: getColor('bg-page');
   }
 
+  &--contacts {
+    background-image: linear-gradient(getColor('primary') 100px, getColor('bg-page') 100px);
+  }
+
   &__lable-title {
     @include text(Titan One, 18px, 400, 1.17, null);
 
