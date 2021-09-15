@@ -1,12 +1,5 @@
 .gallery {
-  background: linear-gradient(#fff5f6 50%, tomato);
-  @media (max-width: 480px) {
-    background: linear-gradient(#fff5f6 25% 65%, #ffffff 65% 100%);
-  }
-  @media (min-width: 481px) and (max-width: 767px) {
-    background: linear-gradient(#fff5f6 25% 60%, #ffffff 60% 100%);
-  }
-  background: linear-gradient(#fff5f6 25% 50%, #ffffff 50% 100%);
+  background: linear-gradient(getColor('bg-page') 40%, #ffffff 40%);
 }
 
 .grid-container {
