@@ -26,14 +26,14 @@
     @include text(Titan One, 58px, 400, 1.138, null);
   }
 }
-.products__link {
+.products__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   cursor: default;
 }
 
-.products__link:hover .bounce {
+.bounce {
   animation-name: bounce;
   animation-timing-function: ease;
 }
@@ -262,59 +262,4 @@
     background-size: 40px 40px;
     background-image: url(../images/products_arrow@3x.png);
   }
-}
-#more {
-  display: none;
-}
-// для поворота
-.wrap-icecream {
-  position: relative;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.wrap-icecream__front {
-  position: absolute;
-  background-color: getColor('bg-accent');
-  transition: 1s;
-  backface-visibility: hidden;
-  &::before {
-    content: url(../images/products_1-mobile.png);
-    position: absolute;
-    margin: 0;
-    top: -113px;
-    width: 249px;
-    height: 252px;
-  }
-}
-.wrap-icecream__back {
-  background-color: getColor('bg-accent');
-  transition: 1s;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-  &::before {
-    content: url(../images/products_1-mobile.png);
-    position: absolute;
-    margin: 0;
-    top: -113px;
-    width: 249px;
-    height: 252px;
-  }
-}
-
-// .wrap-icecream__card:active .wrap-icecream__front{
-//     transform: rotateY(180deg);
-// }
-// .wrap-icecream__card:active .wrap-icecream__back{
-//     transform: rotateY(360deg);
-// }
-
-.active {
-  transform: rotateY(180deg);
-}
-
-.super-active {
-  transform: rotateY(360deg);
 }
