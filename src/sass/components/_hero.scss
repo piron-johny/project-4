@@ -1,7 +1,6 @@
 /* Секция герой */
 .hero {
   min-width: 320px;
-  max-width: 1280px;
   width: 100%;
   height: 502px;
   margin-left: auto;
@@ -167,7 +166,7 @@
 }
 
 .hero__link--products {
-  padding: 7px 14px;
+  padding: 5px 12px;
   font-family: DM Sans, sans-serif;
   font-size: 8px;
   line-height: 1.25;
@@ -196,7 +195,7 @@
 }
 
 .hero__link--made {
-  padding: 7px 14px;
+  padding: 5px 12px;
   font-family: DM Sans, sans-serif;
   font-size: 8px;
   line-height: 1.25;
