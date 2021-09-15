@@ -15,18 +15,9 @@
   position: relative;
   z-index: 2;
   @include flex(column, null, center, center);
-  background-color: getColor('bg-page');
+  background-image: linear-gradient(getColor('primary') 100px, getColor('bg-page') 100px);
   width: 100%;
   height: 100%;
-  @media screen and (max-width: 767px) {
-    background-image: linear-gradient(getColor('primary') 84px, getColor('bg-page') 84px);
-  }
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(getColor('primary') 78px, getColor('bg-page') 78px);
-  }
-  @media screen and(min-width: 1280px) {
-    background-image: linear-gradient(getColor('primary') 102px, getColor('bg-page') 102px);
-  }
   &__img {
     display: none;
     position: absolute;
