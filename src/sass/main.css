@@ -1028,8 +1028,8 @@ img {
   color: #ffffff;
   background-color: #d41443;
   border-radius: 20px;
-  border: 2px solid #ffffff;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #d41443;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 1280px) {
@@ -1043,7 +1043,6 @@ img {
 .hero__link--products:hover, .hero__link--products:focus {
   color: #d41443;
   background-color: #ffffff;
-  border: 2px solid #d41443;
   outline: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -1056,8 +1055,8 @@ img {
   color: #d41443;
   background-color: #ffffff;
   border-radius: 20px;
-  border: 2px solid #d41443;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 1280px) {
@@ -1071,7 +1070,6 @@ img {
 .hero__link--made:hover, .hero__link--made:focus {
   color: #ffffff;
   background-color: #d41443;
-  border: 2px solid #ffffff;
   outline: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
