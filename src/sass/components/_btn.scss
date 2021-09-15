@@ -10,6 +10,7 @@
   color: getColor('accent');
   background-color: getColor('primary');
 
+  border: 2px solid transparent;
   border-radius: 22px;
   border: transparent;
 
@@ -44,7 +45,6 @@
     width: auto;
     height: auto;
     padding: 12px 40px;
-
     @include text(DM Sans, 14px, 400, 1.29, null);
   }
 
