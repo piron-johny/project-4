@@ -4,7 +4,6 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-
   }
   position: absolute;
   top: 0;
@@ -25,7 +24,7 @@
   position: relative;
   top: 0;
   left: 0;
-  max-width: 480px;
+  min-width: 320px;
   height: 62px;
   background-color: transparent;
   z-index: 1;
@@ -43,14 +42,23 @@
     left: 46px;
     padding: 0;
   }
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
-.logo__icon {
-  fill: getColor('accent');
-  stroke: getColor('accent');
+.icon-logo {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.text-logo {
+  @include text(Titan One, 26px, 400, 1.15, 0.04em);
+  color: getColor('accent');
+  text-transform: uppercase;
+  padding-left: 20px;
 }
 
 .nav {
@@ -78,13 +86,13 @@
   @include transition(color, null);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   color: getColor('primary');
 
   &--current {
     color: getColor('accent');
   }
-  
+
   &:hover,
   &:focus {
     color: getColor('accent');
@@ -95,7 +103,7 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  
+
   @media screen and (min-width: 767px) {
     position: absolute;
     top: 38px;
@@ -111,8 +119,8 @@
   border: none;
 }
 
-.menu-container__btn {
-  width: calc(100% - 2 * 20px);
+.btn.menu-container__btn {
+  width: calc(100% - 2*20px);
   margin: 0 auto 19px auto;
   border: none;
 }
@@ -124,16 +132,16 @@
 
 .menu-container {
   @media screen and (min-width: 480px) {
-    width: 480px;
+    width: 350px;
   }
 
   @media screen and (max-width: 479px) {
-    width: 250px;
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) {
-    width: 254px;
-    z-index: 1;
+    width: 350px;
+    z-index: 99;
   }
 
   @media screen and (min-width: 1280px) {
@@ -224,7 +232,7 @@
   border-top: 1px solid getColor('border-burger');
 
   &:last-child {
-    border-bottom: 1px solid getColor('border-burger');  
+    border-bottom: 1px solid getColor('border-burger');
   }
 }
 
