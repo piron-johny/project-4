@@ -4,7 +4,6 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-
   }
   position: absolute;
   top: 0;
@@ -78,13 +77,13 @@
   @include transition(color, null);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   color: getColor('primary');
 
   &--current {
     color: getColor('accent');
   }
-  
+
   &:hover,
   &:focus {
     color: getColor('accent');
@@ -95,12 +94,12 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  
+
   @media screen and (min-width: 767px) {
     position: absolute;
     top: 38px;
     right: 34px;
-    width: 160px;
+    width: auto;
   }
 
   @media screen and (min-width: 1280px) {
@@ -108,18 +107,11 @@
     top: 38px;
     right: 115px;
   }
-  border: none;
 }
 
 .menu-container__btn {
   width: calc(100% - 2 * 20px);
   margin: 0 auto 19px auto;
-  border: none;
-}
-
-.btn__icon {
-  fill: getColor('accent');
-  stroke: getColor('accent');
 }
 
 .menu-container {
@@ -224,7 +216,7 @@
   border-top: 1px solid getColor('border-burger');
 
   &:last-child {
-    border-bottom: 1px solid getColor('border-burger');  
+    border-bottom: 1px solid getColor('border-burger');
   }
 }
 

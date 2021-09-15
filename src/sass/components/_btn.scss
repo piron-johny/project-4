@@ -1,7 +1,8 @@
 .btn {
+  position: relative;
   @include flex(null, null, center, center);
 
-  width: 170px;
+  width: 220px;
   height: 44px;
 
   @include text(DM Sans, 16px, 700, 1.31, null);
@@ -10,6 +11,7 @@
   background-color: getColor('primary');
 
   border-radius: 22px;
+  border: transparent;
 
   cursor: pointer;
 
@@ -17,13 +19,14 @@
 
   @media screen and (min-width: 768px) {
     width: auto;
-    padding: 0, 35px;
+    padding: 0 45px;
   }
 
   &:hover,
   &:focus {
-    color: getColor('primary');
-    background-color: getColor('accent');
+    color: getColor('accent');
+    background-color: getColor('primary--hover');
+    outline: none;
   }
 
   &--accent {
@@ -32,26 +35,40 @@
 
     &:hover,
     &:focus {
-      color: getColor('accent');
-      background-color: getColor('primary');
+      color: getColor('primary');
+      background-color: getColor('accent--hover');
     }
   }
 
   &--hero {
     width: auto;
     height: auto;
-    padding: 7px, 14px;
+    padding: 12px 40px;
 
-    @include text(DM Sans, 8px, 400, 1.25, null);
+    @include text(DM Sans, 14px, 400, 1.29, null);
   }
 
   &--mobile-menu {
     width: 100%;
   }
 
-  .btn__icon {
+  &__icon {
     margin-left: 12px;
     fill: currentColor;
     stroke: currentColor;
+  }
+
+  &__icecream {
+    position: absolute;
+    left: 10px;
+    fill: currentColor;
+    opacity: 0;
+
+    @include transition(opacity, null);
+  }
+
+  &:hover &__icecream,
+  &:focus &__icecream {
+    opacity: 1;
   }
 }
