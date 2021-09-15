@@ -1113,11 +1113,13 @@ img {
   flex-direction: column;
   justify-content: flex-end;
   width: 114px;
+  padding-bottom: 6px;
 }
 
 @media screen and (min-width: 1280px) {
   .hero-milk-bio {
     width: 200px;
+    padding-bottom: 11px;
   }
 }
 
