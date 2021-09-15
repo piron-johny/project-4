@@ -108,7 +108,7 @@
     position: absolute;
     top: 38px;
     right: 34px;
-    width: 160px;
+    width: auto;
   }
 
   @media screen and (min-width: 1280px) {
@@ -116,18 +116,11 @@
     top: 38px;
     right: 115px;
   }
-  border: none;
 }
 
 .btn.menu-container__btn {
   width: calc(100% - 2*20px);
   margin: 0 auto 19px auto;
-  border: none;
-}
-
-.btn__icon {
-  fill: getColor('accent');
-  stroke: getColor('accent');
 }
 
 .menu-container {
