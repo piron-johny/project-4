@@ -73,12 +73,12 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: 319px) {
     min-width: 300px;
-    padding: 20px;
+    // padding: 20px;
   }
 
   @media screen and (min-width: 320px) and (max-width: 449px) {
     min-width: 320px;
-    padding: 20px;
+    // padding: 20px;
   }
 
   @media screen and (min-width: 450px) and (max-width: 767px) {
@@ -270,8 +270,8 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
 .button-modal-close {
   position: absolute;
-  // top: 8px;
-  // right: 8px;
+  top: 8px;
+  right: 8px;
 
   width: 30px;
   height: 30px;
@@ -286,16 +286,6 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: getColor(accent);
-  }
-
-  @media (max-width: 449px) {
-    top: 2px;
-    right: 2px;
-  }
-
-  @media (min-width: 450px) {
-    top: 8px;
-    right: 8px;
   }
 }
 
@@ -323,9 +313,6 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
 // READ ME FORM
 .franchise-benefits {
-  @media (max-width: 767px) {
-    display: none;
-  }
   width: 100%;
   margin: 0 auto 10px auto;
 
