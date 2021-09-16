@@ -1,4 +1,4 @@
-$(document).ready(function() {   
+$(function() {   
  var btn_top = $('#scrolling-up');  
     $(window).scroll(function() {     
       if ($(window).scrollTop() < 400) {
@@ -13,11 +13,11 @@ $(document).ready(function() {
      });
 });
 
-$(document).ready(function() {
+$(function() {
   $('a[href^="#"]').click(function(){ 
     let anchor = $(this).attr('href');  
     $('html, body').animate({
-      scrollTop:  $(anchor).offset().top
+      scrollTop: $(anchor).offset().top
     }, 400);
   });
 });
