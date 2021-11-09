@@ -1,4 +1,4 @@
-Comand project. HTML, CSS
+# Comand project. HTML, CSS
 ____________________________
 # Parcel boilerplate
 
