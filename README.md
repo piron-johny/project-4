@@ -1,5 +1,5 @@
 # Comand project. HTML, CSS
-____________________________
+
 # Parcel boilerplate
 
 ## Скрытые файлы
